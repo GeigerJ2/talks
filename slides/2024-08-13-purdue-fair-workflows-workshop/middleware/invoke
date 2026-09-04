@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#
+# jupyter tool
+#
+/usr/bin/invoke_app "$@" -t aiida \
+                         -C "start_jupyter -T @tool -t aiida.ipynb" \
+                         -u anaconda-7 \
+                         -u aiida-0.7.3 \
+                         -r none \
+                         -w headless

@@ -1,0 +1,2989 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="main-svg"
+   width="180.00015mm"
+   height="111.0835mm"
+   viewBox="0 0 680.31551 419.84314"
+   version="1.1"
+   id="svg906"
+   sodipodi:docname="ceria_sac-sfig_pt_comparsion.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)"
+   inkscape:export-filename="/home/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata910">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     id="namedview908"
+     showgrid="false"
+     inkscape:zoom="0.34818672"
+     inkscape:cx="97.648757"
+     inkscape:cy="323.1025"
+     inkscape:window-x="0"
+     inkscape:window-y="-37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg906"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     units="mm"
+     width="7in"
+     inkscape:document-units="in"
+     inkscape:document-rotation="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs-46b59a">
+    <g
+       class="clips"
+       id="g16">
+      <clipPath
+         id="clip46b59axyplot"
+         class="plotclip">
+        <rect
+           width="718"
+           height="427"
+           id="rect4"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip46b59ax">
+        <rect
+           x="88"
+           y="0"
+           width="718"
+           height="500"
+           id="rect7" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip46b59ay">
+        <rect
+           x="0"
+           y="3"
+           width="809"
+           height="427"
+           id="rect10" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip46b59axy">
+        <rect
+           x="88"
+           y="3"
+           width="718"
+           height="427"
+           id="rect13" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g18" />
+    <g
+       class="clips"
+       id="g16-6">
+      <clipPath
+         id="clip5250bcxyplot"
+         class="plotclip">
+        <rect
+           width="729"
+           height="423"
+           id="rect4-7"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip5250bcx">
+        <rect
+           x="77"
+           y="0"
+           width="729"
+           height="500"
+           id="rect7-5" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip5250bcy">
+        <rect
+           x="0"
+           y="3"
+           width="809"
+           height="423"
+           id="rect10-3" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip5250bcxy">
+        <rect
+           x="77"
+           y="3"
+           width="729"
+           height="423"
+           id="rect13-5" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g18-6" />
+    <g
+       class="clips"
+       id="g1261" />
+    <clipPath
+       id="legend5250bc">
+      <rect
+         width="88"
+         height="74"
+         x="0"
+         y="0"
+         id="rect1263" />
+    </clipPath>
+  </defs>
+  <rect
+     style="fill:#ffffff;stroke-width:1.88976;stroke-dashoffset:2.29928"
+     id="rect1926"
+     width="680.31543"
+     height="419.84314"
+     x="3.1166543e-05"
+     y="-1.9692093e-06" />
+  <g
+     class="bglayer"
+     id="g21"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="layer-below"
+     id="g27"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)">
+    <g
+       class="imagelayer"
+       id="g23" />
+    <g
+       class="shapelayer"
+       id="g25" />
+  </g>
+  <g
+     class="layer-subplot"
+     id="g33"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
+    <g
+       class="shapelayer"
+       id="g29" />
+    <g
+       class="imagelayer"
+       id="g31" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g39"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
+    <g
+       class="x"
+       id="g35" />
+    <g
+       class="y"
+       id="g37" />
+  </g>
+  <g
+     class="zerolinelayer"
+     id="g41"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     class="xlines-below"
+     id="path43"
+     d=""
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     class="ylines-below"
+     id="path45"
+     d=""
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overlines-below"
+     id="g47"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="xaxislayer-below"
+     id="g49"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="yaxislayer-below"
+     id="g51"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overaxes-below"
+     id="g53"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overplot"
+     id="g595"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overlines-above"
+     id="g601"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overaxes-above"
+     id="g663"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="polarlayer"
+     id="g669"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="ternarylayer"
+     id="g671"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="geolayer"
+     id="g673"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="funnelarealayer"
+     id="g675"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="pielayer"
+     id="g677"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="treemaplayer"
+     id="g679"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="sunburstlayer"
+     id="g681"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <g
+     class="glimages"
+     id="g683"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)" />
+  <defs
+     id="topdefs-46b59a">
+    <g
+       class="clips"
+       id="g685" />
+  </defs>
+  <g
+     class="layer-above"
+     id="g692"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"
+     transform="translate(-8.0396669,-991.70279)">
+    <g
+       class="imagelayer"
+       id="g688" />
+    <g
+       class="shapelayer"
+       id="g690" />
+  </g>
+  <g
+     class="g-gtitle"
+     id="g694"
+     transform="translate(-8.0396669,-991.70279)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="layer-subplot"
+     id="g33-7"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
+    <g
+       class="shapelayer"
+       id="g29-0" />
+    <g
+       class="imagelayer"
+       id="g31-9" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g39-3"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200">
+    <g
+       class="x"
+       id="g35-6" />
+    <g
+       class="y"
+       id="g37-0" />
+  </g>
+  <g
+     class="zerolinelayer"
+     id="g41-6"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     class="xlines-below"
+     id="path43-2"
+     d=""
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <path
+     class="ylines-below"
+     id="path45-6"
+     d=""
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overlines-below"
+     id="g47-1"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="xaxislayer-below"
+     id="g49-8"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="yaxislayer-below"
+     id="g51-7"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overaxes-below"
+     id="g53-9"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overplot"
+     id="g1179"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overlines-above"
+     id="g1185"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     class="overaxes-above"
+     id="g1239"
+     transform="translate(-8.0396669,-459.40529)"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <rect
+     class="scrollbar"
+     rx="20"
+     ry="3"
+     width="0"
+     height="0"
+     x="688.61035"
+     y="-128.55525"
+     style="fill:#808ba4;fill-opacity:1"
+     id="rect1315"
+     inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+  <g
+     id="g2782"
+     transform="translate(-3.6270034e-7,0.01796559)">
+    <g
+       id="g2774"
+       transform="scale(1.0123728)"
+       inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         class="trace scatter trace4081f0"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-miterlimit:2;stroke-opacity:1"
+         id="g67"
+         transform="matrix(1.0483642,0,0,1.0480679,62.044568,-47.947844)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g55"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g57"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g59"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g63"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(23.93,241.9)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:1.90801px;stroke-opacity:1"
+             id="path61" />
+        </g>
+        <g
+           class="text"
+           id="g65"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter trace02c26b"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:0.953999;stroke-miterlimit:2"
+         id="g81"
+         transform="matrix(1.0483642,0,0,1.0480679,57.025,-46.172418)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g69"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="errorbars"
+           id="g71"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="lines"
+           id="g73"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="points"
+           id="g77"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999">
+          <path
+             class="point"
+             transform="translate(47.87,233.43)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:1.90801px;stroke-opacity:1"
+             id="path75" />
+        </g>
+        <g
+           class="text"
+           id="g79"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+      </g>
+      <g
+         class="trace scatter trace21916a"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-miterlimit:2;stroke-opacity:1"
+         id="g111"
+         transform="matrix(1.0483642,0,0,0.83845433,45.985725,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g83"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g85"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g87"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g107"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(100.52,275.29)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path89" />
+          <path
+             class="point"
+             transform="translate(100.52,275.46)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path91" />
+          <path
+             class="point"
+             transform="translate(100.52,257.44)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path93" />
+          <path
+             class="point"
+             transform="translate(100.52,265.04)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path95" />
+          <path
+             class="point"
+             transform="translate(100.52,265.39)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path97" />
+          <path
+             class="point"
+             transform="translate(100.52,256.72)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path99" />
+          <path
+             class="point"
+             transform="translate(100.52,275.56)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path101" />
+          <path
+             class="point"
+             transform="translate(100.52,275.74)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path103" />
+          <path
+             class="point"
+             transform="translate(100.52,257.23)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path105" />
+        </g>
+        <g
+           class="text"
+           id="g109"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter tracedddfef"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:1.0666;stroke-miterlimit:2"
+         id="g139"
+         transform="matrix(1.0483642,0,0,0.83845433,40.968255,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g113"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="errorbars"
+           id="g115"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="lines"
+           id="g117"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="points"
+           id="g135"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666">
+          <path
+             class="point"
+             transform="translate(124.45,262.88)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path119" />
+          <path
+             class="point"
+             transform="translate(124.45,263.29)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path121" />
+          <path
+             class="point"
+             transform="translate(124.45,252.66)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path123" />
+          <path
+             class="point"
+             transform="translate(124.45,252.9)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path125" />
+          <path
+             class="point"
+             transform="translate(124.45,244.19)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path127" />
+          <path
+             class="point"
+             transform="translate(124.45,262.79)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path129" />
+          <path
+             class="point"
+             transform="translate(124.45,263.1)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path131" />
+          <path
+             class="point"
+             transform="translate(124.45,244.5)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path133" />
+        </g>
+        <g
+           class="text"
+           id="g137"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+      </g>
+      <g
+         class="trace scatter trace17c0e7"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-miterlimit:2;stroke-opacity:1"
+         id="g161"
+         transform="matrix(1.0483642,0,0,0.83845433,29.926884,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g141"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g143"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g145"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g157"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(177.11,266.23)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path147" />
+          <path
+             class="point"
+             transform="translate(177.11,249.77)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path149" />
+          <path
+             class="point"
+             transform="translate(177.11,219.85)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path151" />
+          <path
+             class="point"
+             transform="translate(177.11,213.35)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path153" />
+          <path
+             class="point"
+             transform="translate(177.11,232.16)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path155" />
+        </g>
+        <g
+           class="text"
+           id="g159"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter trace5135a1"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:1.0666;stroke-miterlimit:2"
+         id="g179"
+         transform="matrix(1.0483642,0,0,0.83845433,24.909413,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g163"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="errorbars"
+           id="g165"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="lines"
+           id="g167"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="points"
+           id="g175"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666">
+          <path
+             class="point"
+             transform="translate(201.04,237.56)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path169" />
+          <path
+             class="point"
+             transform="translate(201.04,235.68)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path171" />
+          <path
+             class="point"
+             transform="translate(201.04,225.04)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path173" />
+          <path
+             class="point"
+             d="m 209.44,254.05332 h -16.8"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path1764" />
+        </g>
+        <g
+           class="text"
+           id="g177"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+      </g>
+      <g
+         class="trace scatter traceb0edfe"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-miterlimit:2;stroke-opacity:1"
+         id="g193"
+         transform="matrix(1.0483642,0,0,1.0480679,11.861472,-26.837661)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g181"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g183"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g185"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g189"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(263.27,141.19)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:1.90801px;stroke-opacity:1"
+             id="path187" />
+        </g>
+        <g
+           class="text"
+           id="g191"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:0.953999;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter traceb43a16"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:0.953999;stroke-miterlimit:2"
+         id="g207"
+         transform="matrix(1.0483642,0,0,1.0480679,6.8440013,-24.336971)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g195"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="errorbars"
+           id="g197"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="lines"
+           id="g199"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+        <g
+           class="points"
+           id="g203"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999">
+          <path
+             class="point"
+             transform="translate(287.2,129.26)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:1.90801px;stroke-opacity:1"
+             id="path201" />
+        </g>
+        <g
+           class="text"
+           id="g205"
+           style="fill:#808080;stroke:#666666;stroke-width:0.953999" />
+      </g>
+      <g
+         class="trace scatter trace5aee84"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-miterlimit:2;stroke-opacity:1"
+         id="g235"
+         transform="matrix(1.0483642,0,0,0.83845433,-4.1952735,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g209"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g211"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g213"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g231"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(339.85,121.22)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path215" />
+          <path
+             class="point"
+             transform="translate(339.85,122.63)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path217" />
+          <path
+             class="point"
+             transform="translate(339.85,131.65)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path219" />
+          <path
+             class="point"
+             transform="translate(339.85,138.4)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path221" />
+          <path
+             class="point"
+             transform="translate(339.85,96.6)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path223" />
+          <path
+             class="point"
+             transform="translate(339.85,132.4)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path225" />
+          <path
+             class="point"
+             transform="translate(339.85,107.58)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path227" />
+          <path
+             class="point"
+             transform="translate(339.85,103.13)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path229" />
+        </g>
+        <g
+           class="text"
+           id="g233"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter trace8fe2f2"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:1.0666;stroke-miterlimit:2"
+         id="g261"
+         transform="matrix(1.0483642,0,0,0.83845433,-9.2148411,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g237"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="errorbars"
+           id="g239"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="lines"
+           id="g241"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="points"
+           id="g257"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666">
+          <path
+             class="point"
+             transform="translate(363.79,143.5)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path243" />
+          <path
+             class="point"
+             transform="translate(363.79,111.21)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path245" />
+          <path
+             class="point"
+             transform="translate(363.79,118.86)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path247" />
+          <path
+             class="point"
+             transform="translate(363.79,126.59)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path249" />
+          <path
+             class="point"
+             transform="translate(363.79,84.84)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path251" />
+          <path
+             class="point"
+             transform="translate(363.79,119.57)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path253" />
+          <path
+             class="point"
+             transform="translate(363.79,97.99)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path255" />
+        </g>
+        <g
+           class="text"
+           id="g259"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+      </g>
+      <g
+         class="trace scatter trace441628"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-miterlimit:2;stroke-opacity:1"
+         id="g333"
+         transform="matrix(1.0483642,0,0,0.83845433,-20.254116,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g263"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g265"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g267"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g329"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(416.44,113.75)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path269" />
+          <path
+             class="point"
+             transform="translate(416.44,130.09)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path271" />
+          <path
+             class="point"
+             transform="translate(416.44,113.71)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path273" />
+          <path
+             class="point"
+             transform="translate(416.44,88.26)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path275" />
+          <path
+             class="point"
+             transform="translate(416.44,164.99)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path277" />
+          <path
+             class="point"
+             transform="translate(416.44,173.82)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path279" />
+          <path
+             class="point"
+             transform="translate(416.44,105.26)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path281" />
+          <path
+             class="point"
+             transform="translate(416.44,160.34)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path283" />
+          <path
+             class="point"
+             transform="translate(416.44,173.21)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path285" />
+          <path
+             class="point"
+             transform="translate(416.44,207.72)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path287" />
+          <path
+             class="point"
+             transform="translate(416.44,176.63)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path289" />
+          <path
+             class="point"
+             transform="translate(416.44,185.78)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path291" />
+          <path
+             class="point"
+             transform="translate(416.44,174.98)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path293" />
+          <path
+             class="point"
+             transform="translate(416.44,203.25)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path295" />
+          <path
+             class="point"
+             transform="translate(416.44,117.72)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path297" />
+          <path
+             class="point"
+             transform="translate(416.44,85.1)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path299" />
+          <path
+             class="point"
+             transform="translate(416.44,183.61)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path301" />
+          <path
+             class="point"
+             transform="translate(416.44,91.3)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path303" />
+          <path
+             class="point"
+             transform="translate(416.44,167.88)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path305" />
+          <path
+             class="point"
+             transform="translate(416.44,200.87)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path307" />
+          <path
+             class="point"
+             transform="translate(416.44,159.03)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path309" />
+          <path
+             class="point"
+             transform="translate(416.44,178.58)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path311" />
+          <path
+             class="point"
+             transform="translate(416.44,202.38)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path313" />
+          <path
+             class="point"
+             transform="translate(416.44,124.66)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path315" />
+          <path
+             class="point"
+             transform="translate(416.44,152.65)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path317" />
+          <path
+             class="point"
+             transform="translate(416.44,137.82)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path319" />
+          <path
+             class="point"
+             transform="translate(416.44,164.33)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path321" />
+          <path
+             class="point"
+             transform="translate(416.44,173.93)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path323" />
+          <path
+             class="point"
+             transform="translate(416.44,130.21)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path325" />
+          <path
+             class="point"
+             transform="translate(416.44,180.65)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path327" />
+        </g>
+        <g
+           class="text"
+           id="g331"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter trace081e8c"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:1.0666;stroke-miterlimit:2"
+         id="g395"
+         transform="matrix(1.0483642,0,0,0.83845433,-25.271586,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g335"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="errorbars"
+           id="g337"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="lines"
+           id="g339"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="points"
+           id="g391"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666">
+          <path
+             class="point"
+             transform="translate(440.37,98.38)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path341" />
+          <path
+             class="point"
+             transform="translate(440.37,148.01)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path343" />
+          <path
+             class="point"
+             transform="translate(440.37,157.16)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path345" />
+          <path
+             class="point"
+             transform="translate(440.37,65.29)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path347" />
+          <path
+             class="point"
+             transform="translate(440.37,142.96)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path349" />
+          <path
+             class="point"
+             transform="translate(440.37,134.83)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path351" />
+          <path
+             class="point"
+             transform="translate(440.37,190.66)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path353" />
+          <path
+             class="point"
+             transform="translate(440.37,168.69)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path355" />
+          <path
+             class="point"
+             transform="translate(440.37,139.63)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path357" />
+          <path
+             class="point"
+             transform="translate(440.37,184.68)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path359" />
+          <path
+             class="point"
+             transform="translate(440.37,60.13)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path361" />
+          <path
+             class="point"
+             transform="translate(440.37,86.85)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path363" />
+          <path
+             class="point"
+             transform="translate(440.37,166.85)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path365" />
+          <path
+             class="point"
+             transform="translate(440.37,152.5)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path367" />
+          <path
+             class="point"
+             transform="translate(440.37,155.27)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path369" />
+          <path
+             class="point"
+             transform="translate(440.37,141.93)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path371" />
+          <path
+             class="point"
+             transform="translate(440.37,161.67)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path373" />
+          <path
+             class="point"
+             transform="translate(440.37,185.08)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path375" />
+          <path
+             class="point"
+             transform="translate(440.37,49.57)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path377" />
+          <path
+             class="point"
+             transform="translate(440.37,135.09)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path379" />
+          <path
+             class="point"
+             transform="translate(440.37,119.89)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path381" />
+          <path
+             class="point"
+             transform="translate(440.37,167.71)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path383" />
+          <path
+             class="point"
+             transform="translate(440.37,162.72)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path385" />
+          <path
+             class="point"
+             transform="translate(440.37,138.22)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path387" />
+          <path
+             class="point"
+             transform="translate(440.37,163.05)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path389" />
+        </g>
+        <g
+           class="text"
+           id="g393"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+      </g>
+      <g
+         class="trace scatter traced30c05"
+         style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-miterlimit:2;stroke-opacity:1"
+         id="g479"
+         transform="matrix(1.0483642,0,0,0.83845433,-70.435115,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g397"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="errorbars"
+           id="g399"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="lines"
+           id="g401"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+        <g
+           class="points"
+           id="g475"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1">
+          <path
+             class="point"
+             transform="translate(655.77,278.34)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path403" />
+          <path
+             class="point"
+             transform="translate(655.77,276.23)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path405" />
+          <path
+             class="point"
+             transform="translate(655.77,289.05)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path407" />
+          <path
+             class="point"
+             transform="translate(655.77,305.01)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path409" />
+          <path
+             class="point"
+             transform="translate(655.77,306.12)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path411" />
+          <path
+             class="point"
+             transform="translate(655.77,265.56)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path413" />
+          <path
+             class="point"
+             transform="translate(655.77,254.45)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path415" />
+          <path
+             class="point"
+             transform="translate(655.77,289.64)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path417" />
+          <path
+             class="point"
+             transform="translate(655.77,292.56)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path419" />
+          <path
+             class="point"
+             transform="translate(655.77,308.97)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path421" />
+          <path
+             class="point"
+             transform="translate(655.77,245.56)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path423" />
+          <path
+             class="point"
+             transform="translate(655.77,306.79)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path425" />
+          <path
+             class="point"
+             transform="translate(655.77,283.6)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path427" />
+          <path
+             class="point"
+             transform="translate(655.77,275.61)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path429" />
+          <path
+             class="point"
+             transform="translate(655.77,303.39)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path431" />
+          <path
+             class="point"
+             transform="translate(655.77,320.91)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path433" />
+          <path
+             class="point"
+             transform="translate(655.77,321.35)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path435" />
+          <path
+             class="point"
+             transform="translate(655.77,246.03)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path437" />
+          <path
+             class="point"
+             transform="translate(655.77,267.25)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path439" />
+          <path
+             class="point"
+             transform="translate(655.77,302.58)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path441" />
+          <path
+             class="point"
+             transform="translate(655.77,234.02)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path443" />
+          <path
+             class="point"
+             transform="translate(655.77,322.92)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path445" />
+          <path
+             class="point"
+             transform="translate(655.77,321.81)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path447" />
+          <path
+             class="point"
+             transform="translate(655.77,262.18)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path449" />
+          <path
+             class="point"
+             transform="translate(655.77,305.29)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path451" />
+          <path
+             class="point"
+             transform="translate(655.77,321.28)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path453" />
+          <path
+             class="point"
+             transform="translate(655.77,322.91)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path455" />
+          <path
+             class="point"
+             transform="translate(655.77,309.07)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path457" />
+          <path
+             class="point"
+             transform="translate(655.77,299.48)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path459" />
+          <path
+             class="point"
+             transform="translate(655.77,321.93)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path461" />
+          <path
+             class="point"
+             transform="translate(655.77,306.53)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path463" />
+          <path
+             class="point"
+             transform="translate(655.77,286.43)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path465" />
+          <path
+             class="point"
+             transform="translate(655.77,231.94)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path467" />
+          <path
+             class="point"
+             transform="translate(655.77,268.39)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path469" />
+          <path
+             class="point"
+             transform="translate(655.77,299.38)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path471" />
+          <path
+             class="point"
+             transform="translate(655.77,298.96)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:#008000;stroke-width:2.13322px;stroke-opacity:1"
+             id="path473" />
+        </g>
+        <g
+           class="text"
+           id="g477"
+           style="fill:#ff00ff;stroke:#008000;stroke-width:1.0666;stroke-opacity:1" />
+      </g>
+      <g
+         class="trace scatter trace6f9eb3"
+         style="opacity:1;fill:#808080;stroke:#666666;stroke-width:1.0666;stroke-miterlimit:2"
+         id="g561"
+         transform="matrix(1.0483642,0,0,0.83845433,-75.454683,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g481"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="errorbars"
+           id="g483"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="lines"
+           id="g485"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+        <g
+           class="points"
+           id="g557"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666">
+          <path
+             class="point"
+             transform="translate(679.71,262.33)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path487" />
+          <path
+             class="point"
+             transform="translate(679.71,284.11)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path489" />
+          <path
+             class="point"
+             transform="translate(679.71,284.89)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path491" />
+          <path
+             class="point"
+             transform="translate(679.71,292.72)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path493" />
+          <path
+             class="point"
+             transform="translate(679.71,264.7)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path495" />
+          <path
+             class="point"
+             transform="translate(679.71,261.2)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path497" />
+          <path
+             class="point"
+             transform="translate(679.71,262.31)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path499" />
+          <path
+             class="point"
+             transform="translate(679.71,287.64)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path501" />
+          <path
+             class="point"
+             transform="translate(679.71,284.94)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path503" />
+          <path
+             class="point"
+             transform="translate(679.71,290.97)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path505" />
+          <path
+             class="point"
+             transform="translate(679.71,248.36)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path507" />
+          <path
+             class="point"
+             transform="translate(679.71,291.76)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path509" />
+          <path
+             class="point"
+             transform="translate(679.71,269.85)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path511" />
+          <path
+             class="point"
+             transform="translate(679.71,255.34)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path513" />
+          <path
+             class="point"
+             transform="translate(679.71,289)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path515" />
+          <path
+             class="point"
+             transform="translate(679.71,304.04)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path517" />
+          <path
+             class="point"
+             transform="translate(679.71,307.94)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path519" />
+          <path
+             class="point"
+             transform="translate(679.71,229)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path521" />
+          <path
+             class="point"
+             transform="translate(679.71,287.84)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path523" />
+          <path
+             class="point"
+             transform="translate(679.71,287.65)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path525" />
+          <path
+             class="point"
+             transform="translate(679.71,221)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path527" />
+          <path
+             class="point"
+             transform="translate(679.71,309.78)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path529" />
+          <path
+             class="point"
+             transform="translate(679.71,306.82)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path531" />
+          <path
+             class="point"
+             transform="translate(679.71,245.35)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path533" />
+          <path
+             class="point"
+             transform="translate(679.71,292.08)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path535" />
+          <path
+             class="point"
+             transform="translate(679.71,306.25)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path537" />
+          <path
+             class="point"
+             transform="translate(679.71,305.27)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path539" />
+          <path
+             class="point"
+             transform="translate(679.71,285.11)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path541" />
+          <path
+             class="point"
+             transform="translate(679.71,306.49)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path543" />
+          <path
+             class="point"
+             transform="translate(679.71,269.73)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path545" />
+          <path
+             class="point"
+             transform="translate(679.71,281.89)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path547" />
+          <path
+             class="point"
+             transform="translate(679.71,230.03)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path549" />
+          <path
+             class="point"
+             transform="translate(679.71,238.82)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path551" />
+          <path
+             class="point"
+             transform="translate(679.71,284.43)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path553" />
+          <path
+             class="point"
+             transform="translate(679.71,282.91)"
+             d="M 8.4,0 H -8.4"
+             style="opacity:1;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:2.13322px;stroke-opacity:1"
+             id="path555" />
+        </g>
+        <g
+           class="text"
+           id="g559"
+           style="fill:#808080;stroke:#666666;stroke-width:1.0666" />
+      </g>
+      <g
+         class="trace scatter trace1367e0"
+         style="stroke-width:1.1925;stroke-miterlimit:2"
+         id="g575"
+         transform="matrix(0.83869133,0,0,0.83845433,67.062039,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g563"
+           style="stroke-width:1.1925" />
+        <g
+           class="errorbars"
+           id="g565"
+           style="stroke-width:1.1925" />
+        <g
+           class="lines"
+           id="g569"
+           style="stroke-width:1.1925">
+          <path
+             class="js-line"
+             d="M 239.33,405.65 V 21.35"
+             style="opacity:1;vector-effect:none;fill:none;stroke:#808080;stroke-width:2.38501px;stroke-opacity:1"
+             id="path567" />
+        </g>
+        <g
+           class="points"
+           id="g571"
+           style="stroke-width:1.1925" />
+        <g
+           class="text"
+           id="g573"
+           style="stroke-width:1.1925" />
+      </g>
+      <g
+         class="trace scatter trace13220b"
+         style="stroke-width:1.1925;stroke-miterlimit:2"
+         id="g589"
+         transform="matrix(0.83869133,0,0,0.83845433,67.062039,2.7576815)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           class="fills"
+           id="g577"
+           style="stroke-width:1.1925" />
+        <g
+           class="errorbars"
+           id="g579"
+           style="stroke-width:1.1925" />
+        <g
+           class="lines"
+           id="g583"
+           style="stroke-width:1.1925">
+          <path
+             class="js-line"
+             d="M 478.67,405.65 V 21.35"
+             style="opacity:1;vector-effect:none;fill:none;stroke:#808080;stroke-width:2.38501px;stroke-opacity:1"
+             id="path581" />
+        </g>
+        <g
+           class="points"
+           id="g585"
+           style="stroke-width:1.1925" />
+        <g
+           class="text"
+           id="g587"
+           style="stroke-width:1.1925" />
+      </g>
+      <g
+         class="xaxislayer-above"
+         id="g631"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="xtick"
+           id="g605"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(88)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text603" />
+        </g>
+        <g
+           class="xtick"
+           id="g609"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(207.67)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text607">2O</text>
+        </g>
+        <g
+           class="xtick"
+           id="g613"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(327.33)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text611" />
+        </g>
+        <g
+           class="xtick"
+           id="g617"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(447)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text615">3O</text>
+        </g>
+        <g
+           class="xtick"
+           id="g621"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(566.67)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text619" />
+        </g>
+        <g
+           class="xtick"
+           id="g625"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(686.33)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text623">4O</text>
+        </g>
+        <g
+           class="xtick"
+           id="g629"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="461.79999"
+             transform="translate(806)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text627" />
+        </g>
+      </g>
+      <g
+         class="yaxislayer-above"
+         id="g661"
+         transform="matrix(0.83869133,0,0,0.83845433,-11.372307,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="ytick"
+           id="g635"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,411.83)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text633">−1.0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g639"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,346.45)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text637">−0.5</text>
+        </g>
+        <g
+           class="ytick"
+           id="g643"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,281.07)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text641">0.0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g647"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,215.69)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text645">0.5</text>
+        </g>
+        <g
+           class="ytick"
+           id="g651"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,150.31)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text649">1.0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g655"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,84.92)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text653">1.5</text>
+        </g>
+        <g
+           class="ytick"
+           id="g659"
+           style="stroke-width:1.1925">
+          <text
+             text-anchor="end"
+             x="80.199997"
+             y="8.3999996"
+             transform="translate(0,19.54)"
+             style="font-size:24px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+             id="text657">2.0</text>
+        </g>
+      </g>
+      <g
+         class="g-xtitle"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,-4.7988882)"
+         id="g698"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <text
+           class="xtitle"
+           x="447"
+           y="500.01251"
+           text-anchor="middle"
+           style="font-weight:normal;font-size:26px;font-family:Arial;white-space:pre;opacity:1;fill:#000000;stroke-width:1.42155"
+           id="text696">Metal coordination</text>
+      </g>
+      <g
+         class="g-ytitle"
+         transform="matrix(0.83869133,0,0,0.83845433,16.200339,0.2423185)"
+         id="g706"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <text
+           class="ytitle"
+           transform="rotate(-90,-0.3875,216.5)"
+           x="-0.38749999"
+           y="216.5"
+           text-anchor="middle"
+           style="font-weight:normal;font-size:26px;font-family:Arial;white-space:pre;opacity:1;fill:#000000;stroke-width:1.42155"
+           id="text704"><tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Italic'"
+   id="tspan1818">E</tspan><tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2360">Ads</tspan>​ / eV</text>
+      </g>
+      <g
+         class="annotation"
+         data-index="0"
+         id="g720"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g718"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(104,258)"
+             id="g716"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect708" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text714"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan710"
+                 style="stroke-width:1.1925">0</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan712"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="1"
+         id="g734"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g732"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(126,258)"
+             id="g730"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect722" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text728"><tspan
+                 sodipodi:role="line"
+                 id="tspan16210"
+                 x="9.34375"
+                 y="22"><tspan
+                   class="line"
+                   dy="0em"
+                   x="9.34375"
+                   y="22"
+                   id="tspan724"
+                   style="stroke-width:1.1925">0</tspan><tspan
+                   class="line"
+                   dy="1.3em"
+                   x="9.34375"
+                   y="22"
+                   id="tspan726"
+                   style="stroke-width:1.1925">K</tspan></tspan><tspan
+                 sodipodi:role="line"
+                 id="tspan16212"
+                 x="9.34375"
+                 y="49.5" /></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="2"
+         id="g748"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g746"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(181,292)"
+             id="g744"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect736" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text742"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan738"
+                 style="stroke-width:1.1925">1</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan740"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="3"
+         id="g762"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g760"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(203,292)"
+             id="g758"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect750" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text756"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan752"
+                 style="stroke-width:1.1925">1</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan754"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="4"
+         id="g776"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g774"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(257,282)"
+             id="g772"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect764" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text770"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan766"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan768"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="5"
+         id="g790"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g788"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(280,282)"
+             id="g786"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect778" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text784"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan780"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan782"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="6"
+         id="g804"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g802"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(343,157)"
+             id="g800"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect792" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text798"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan794"
+                 style="stroke-width:1.1925">0</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan796"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="7"
+         id="g818"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g816"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(366,157)"
+             id="g814"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect806" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text812"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan808"
+                 style="stroke-width:1.1925">0</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan810"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="8"
+         id="g832"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g830"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(420,154)"
+             id="g828"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect820" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text826"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan822"
+                 style="stroke-width:1.1925">1</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan824"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="9"
+         id="g846"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g844"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(442,154)"
+             id="g842"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect834" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text840"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan836"
+                 style="stroke-width:1.1925">1</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan838"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="10"
+         id="g860"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g858"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(496,224)"
+             id="g856"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect848" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text854"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan850"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan852"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="11"
+         id="g874"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g872"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(519,224)"
+             id="g870"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect862" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text868"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan864"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan866"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="12"
+         id="g888"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g886"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(736,339)"
+             id="g884"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="15"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect876" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="8.125"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text882"><tspan
+                 class="line"
+                 dy="0em"
+                 x="8.125"
+                 y="22"
+                 id="tspan878"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="8.125"
+                 y="22"
+                 id="tspan880"
+                 style="stroke-width:1.1925">Γ</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         class="annotation"
+         data-index="13"
+         id="g902"
+         transform="matrix(0.83869133,0,0,0.83845433,-6.7427989,0.2423185)"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         style="stroke-width:1.1925">
+        <g
+           class="annotation-text-g"
+           id="g900"
+           style="stroke-width:1.1925">
+          <g
+             class="cursor-pointer"
+             transform="translate(758,339)"
+             id="g898"
+             style="stroke-width:1.1925">
+            <rect
+               class="bg"
+               x="0.5"
+               y="0.5"
+               width="18"
+               height="57"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.1925px;stroke-opacity:0"
+               id="rect890" />
+            <text
+               class="annotation-text"
+               text-anchor="middle"
+               x="9.34375"
+               y="22"
+               style="font-size:22px;font-family:Arial;white-space:pre;fill:#000000;fill-opacity:1;stroke-width:1.42155"
+               id="text896"><tspan
+                 class="line"
+                 dy="0em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan892"
+                 style="stroke-width:1.1925">2</tspan><tspan
+                 class="line"
+                 dy="1.3em"
+                 x="9.34375"
+                 y="22"
+                 id="tspan894"
+                 style="stroke-width:1.1925">K</tspan></text>
+          </g>
+        </g>
+      </g>
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,345.47713 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13560"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,181.01851 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13564"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,126.19896 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13566"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,290.65756 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13568"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,235.83805 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13570"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,71.379417 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13572"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         class="ytick ticks crisp"
+         d="M 64.545965,16.559881 H 59.513817"
+         style="stroke:#444444;stroke-width:3px;stroke-opacity:1"
+         id="path13574"
+         inkscape:export-filename="/media/jgeiger/WAREHOUSE/projects/1_ceria_sac/figs/to_upload/sfig_pt_comparison.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+    </g>
+  </g>
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.88975;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.8"
+     id="rect2828"
+     width="613.3266"
+     height="366.17953"
+     x="66.043999"
+     y="0.944875"
+     inkscape:export-filename="ceria_sac-sfig_pt_comparsion.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200" />
+</svg>

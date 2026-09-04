@@ -1,0 +1,1 @@
+When extending the slabs for (111) the connectivities in the pdbs need to be manually updated. Don't just recreate these directories. 

@@ -1,0 +1,8 @@
+append_text: ''
+computer: localhost
+default_calc_job_plugin: quantumespresso.pw
+description: ''
+filepath_executable: /apps/share64/debian10/espresso/espresso-7.1/bin/pw.x
+label: qe-7.1-pw
+prepend_text: 'export OMP_NUM_THREADS=1'
+use_double_quotes: 'False'

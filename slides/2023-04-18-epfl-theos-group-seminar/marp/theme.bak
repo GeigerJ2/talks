@@ -1,0 +1,45 @@
+/* section::after {
+  content: attr(data-marpit-pagination) '/'attr(data-marpit-pagination-total);
+} */
+
+
+/* .video-frame {
+  border: 1px solid black;
+  padding: 10px;
+} */
+
+/* div.center {
+  text-align: center;
+} */
+
+/* .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
+
+/* Add box around every element */
+/* * { */
+/* outline: 1px solid red; */
+/* } */
+
+
+
+/* h1 { */
+/* counter-reset: h2counter; */
+/* } */
+/*  */
+/* h2 { */
+/* counter-reset: h3counter; */
+/* } */
+/*  */
+/* h2:before { */
+/* content: counter(h2counter) ".\0000a0\0000a0"; */
+/* counter-increment: h2counter; */
+/* } */
+/*  */
+/* h3:before { */
+/* content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0"; */
+/* counter-increment: h3counter; */
+/* } */

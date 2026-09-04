@@ -1,0 +1,31 @@
+# Node / bun
+node_modules/
+*.log
+
+# Slidev build output
+dist/
+.vite-inspect/
+.remote-assets/
+components.d.ts
+
+# Exported decks (rebuild from source)
+*-export.pdf
+slides-export.*
+
+# Local overrides
+*.local
+.env
+.env.*
+
+# Editor / OS
+.claude/
+.DS_Store
+.ipynb_checkpoints/
+
+# Talk media lives on disk but not in git: originals, videos, Blender scenes,
+# PowerPoint decks and the multi-megabyte Inkscape figures. Together they are
+# ~1.6 GB, which is more than a repo should carry. Anything at or above 1 MB,
+# plus the always-binary formats, sits under a talk's media/ directory. The
+# per-talk GitHub repos listed in each README still hold these files, so a
+# fresh clone of this repo can recover them.
+media/

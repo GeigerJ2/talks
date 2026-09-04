@@ -1,0 +1,13 @@
+append_text: ''
+default_memory_per_machine: null
+description: Localhost automatically created by `verdi presto`
+hostname: localhost
+label: localhost_manual
+mpiprocs_per_machine: 4
+mpirun_command: mpirun -np {tot_num_mpiprocs}
+prepend_text: ''
+scheduler: core.direct
+shebang: '#!/bin/bash'
+transport: core.local
+use_double_quotes: false
+work_dir: /home/geiger_j/aiida_projects/fair-workflows-workshop/.aiida/scratch/presto

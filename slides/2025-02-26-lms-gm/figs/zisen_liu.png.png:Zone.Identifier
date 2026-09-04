@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/e9426219-0827-4074-819d-3741d11377d7/zisen_liu.png.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250221%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250221T081614Z&X-Amz-Expires=86400&X-Amz-Signature=fc6c088a1c6b0655d6c2aacf12b75d9329adfed77dc3b01fe919a7aa20c56bed&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22zisen_liu.png.png%22&response-content-type=image%2Fpng&x-id=GetObject

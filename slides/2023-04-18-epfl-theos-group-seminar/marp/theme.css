@@ -1,0 +1,54 @@
+/* @theme pres */
+
+@import 'default';
+
+/* counter-set: counter1 1; */
+
+section {
+  justify-content: start;
+  background: white;
+  color: black;
+  font-family: 'Arial', serif !important;
+  font-size: 30px;
+  counter-increment: my-awesome-counter;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+}
+
+.figure-container {
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
+  /* height: 100vh; */
+  /* Set the container height to the full viewport height */
+}
+
+body {
+  counter-reset: figureCounter tableCounter;
+}
+
+
+figcaption {
+  /* display: table-caption; */
+  counter-increment: figureCounter;
+  caption-side: bottom;
+  color: black;
+}
+
+figcaption:before {
+  content: "Fig. "counter(figureCounter) ". ";
+}
+
+/* section:before { */
+/* content: counter(my-awesome-counter); */
+/* } */
