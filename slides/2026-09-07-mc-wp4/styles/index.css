@@ -1,0 +1,67 @@
+.slidev-layout pre {
+  line-height: 1.4;
+}
+
+/* Bullets: slate chevron marker, generous vertical rhythm. If a slide overflows
+   because of the spacing, the slide has too much text on it. */
+.slidev-layout ul {
+  list-style: none;
+  padding-left: 1.25em;
+}
+
+.slidev-layout ul > li {
+  position: relative;
+  margin-bottom: 1.15em;
+  line-height: 1.5;
+}
+
+.slidev-layout ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.slidev-layout ul > li::before {
+  content: '\203A';
+  position: absolute;
+  left: -1.05em;
+  top: 0;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.95em;
+  line-height: inherit;
+}
+
+/* Nested lists sit tighter, with a lighter marker. */
+.slidev-layout ul ul > li {
+  margin-bottom: 0.5em;
+}
+
+.slidev-layout ul ul > li::before {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.slidev-layout ol > li {
+  margin-bottom: 1.15em;
+  line-height: 1.5;
+}
+
+/* Reference footnotes: pinned to the bottom of the slide, out of the flow. */
+.slidev-layout .refs {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 3.5rem;
+  right: 3.5rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  opacity: 0.55;
+}
+
+.slidev-layout .refs a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.slidev-layout .refs.center {
+  text-align: center;
+}
