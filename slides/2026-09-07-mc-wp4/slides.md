@@ -73,7 +73,7 @@ Q:
 # High-throughput
 
 <div class="flex justify-center pt-2">
-  <img src="/alps-hero-run.png" alt="CSCS Alps hero run, July 2024" style="max-height: 245px" />
+  <img src="/alps-hero-run.png" alt="CSCS Alps hero run, July 2024" style="max-height: 285px" />
 </div>
 
 <div class="text-sm pt-2 text-center">
@@ -82,10 +82,9 @@ Q:
 
 </div>
 
-<div class="text-sm pt-3">
+<div class="text-sm pt-3 text-center">
 
-- Daemon workers: independent Python processes, submitting and polling in parallel
-- Throughput scales with their number, to about one per CPU core
+Throughput scales with the number of daemon workers, independent Python processes, up to about one per CPU core
 
 </div>
 
@@ -110,13 +109,13 @@ Q:
 
 - Recorded as the workflow runs: `while_`, `if_`, dynamic submission
 - Immutable once stored, links validated, processes sealed
-- Results can be traced back at any future point in time
+- Results traceable at any future point in time
 
 </div>
 </div>
 
 <!--
-Q: 
+Cut from the slide, worth saying aloud:
 - Calculations create data, workflows return existing data
 - Acyclic data provenance, so well-defined ancestor queries
 
@@ -178,14 +177,14 @@ Q:
 
 - PostgreSQL / SQLite: the graph, plus each node's `attributes` and `extras` as JSONB
 - the file repository, `disk-objectstore`:
-  - content-addressed, keyed by SHA-256
+  - content-addressed, keyed by SHA-256, deduplicated
   - raw files, never queried by content
-  - packing & deduplication
+  - one `loose` file per new object, packed by `verdi storage maintain`
 - Only file-content SHA-256 crossing between both
 
 </div>
 
-<div class="grid grid-cols-2 gap-6 pt-3">
+<div class="grid grid-cols-2 gap-6 pt-2 compact">
 <div class="text-xs">
 
 `repository_metadata`, a column on the `Node`
@@ -201,16 +200,13 @@ Q:
 </div>
 <div class="text-xs">
 
-the file-repository container on disk
+the container, `$AIIDA_PATH/.aiida/repository/<profile>/container/`
 
 ```text
 loose/aa/bbcc…   one file per object
 packs/0,1,2      append-only, 4 GiB target
 packs.idx        SQLite: hash → pack, offset
 ```
-
-each new object is written as its own file, then `verdi storage maintain`
-concatenates them into packs
 
 </div>
 </div>
@@ -292,7 +288,7 @@ reached through node.base (base.links, base.attributes, base.repository).
 
 Q: responsibilities of BackendNode, SqlaNode, and DbNode, each?
 
-A: BackendNode: the storage-agnostic contract, 30 abstract methods, no SQL.
+A: BackendNode: the storage-agnostic contract, 28 abstract members, no SQL.
 SqlaNode: the SQLAlchemy implementation of it. Wraps one DbNode, holds the
 session. Shared by psql_dos and sqlite_dos, since SqliteDosStorage subclasses
 PsqlDosBackend.
@@ -342,10 +338,10 @@ qb.all()
 </div>
 <div class="col-span-4 text-sm pt-2">
 
-- A path through the graph: one `append` per vertex and its join
-- `with_group`, `with_incoming`, `with_outgoing`, `with_ancestors`, `with_descendants`
+- Path through the graph with `append`
+- Relationships: `with_group`, `with_incoming`, `with_outgoing`, `with_ancestors`, `with_descendants`
 - `Class.fields.*` for filters and projections, typed and autocompleting
-- `project='*'` returns the nodes themselves
+- `project`: what each result row carries
 
 </div>
 </div>
@@ -355,12 +351,13 @@ Q: Write the query in prose here
 
 A: "Take the group labelled mc3d/structures. For every StructureData in it,
 find the CalcJobNodes that consumed it as an input and finished with exit
-status 0. Return the structure's UUID alongside that exit status."
+status 0. Return the structure's UUID alongside the CalcJobNode itself."
 
 Three vertices, two joins: group to structure by membership, structure to
 calculation by an input link.
 
-Q: Ancestors and descendants on `CREATE` and `INPUT_CALC` only: the acyclic half
+Cut from the slide, worth saying aloud: ancestors and descendants traverse
+`CREATE` and `INPUT_CALC` only, the acyclic half of the graph.
 
 -->
 
@@ -378,15 +375,10 @@ node = submit(SomeWorkChain, **inputs)  # returns immediately
 
 - One `ProcessNode` row per process
 - `submit()` serialises inputs, context and state into `checkpoints`
-- Daemon worker: background Python process with an event loop
-- Rebuilds the process from its checkpoint, steps it to the next state
-- Checkpoint rewritten at every transition: a killed daemon resumes
-
-</div>
-
-<div class="text-sm pt-3">
-
+- Daemon worker --- background Python process with an event loop --- picks it up
+- Process rebuilt from its checkpoint, stepped to the next state
 - Every `Process` is a state machine: `CREATED`, `RUNNING`, `WAITING`, `FINISHED`, `EXCEPTED`, `KILLED`
+- Checkpoint rewritten at every transition: a killed daemon resumes
 
 </div>
 
@@ -436,76 +428,71 @@ else's systemd unit, so no watcher is added.
 
 Script:
 
-The daemon is two things stacked, and it helps to keep them apart.
+There are two separate things on this slide, and the whole point is that they
+stay separate. The daemon is who runs your workflows. The broker is how
+messages reach them. They use different channels and they fail independently.
 
-At the bottom there is circus, which is a process supervisor, the same family
-as supervisord. It knows nothing about AiiDA. It starts programs, keeps the
-number you asked for alive, and restarts them when they die. Circus calls each
-supervised program a watcher: a command, a name, and how many copies to run.
+Start with the daemon. When you type verdi daemon start with a number, AiiDA
+does not itself supervise anything. It starts circus, an external process
+supervisor, the same family as supervisord, and hands it a list of programs to
+keep running. Circus knows nothing about AiiDA. It starts programs, keeps the
+number you asked for alive, and restarts them when they die.
 
-When you type verdi daemon start with a number, AiiDA builds that watcher list
-and hands it to circus. The one that always gets added runs verdi daemon
-worker, named after the profile, with numprocesses set to the number you gave.
-So a daemon worker is nothing more mysterious than that command, running under
-a supervisor.
+The program it keeps alive is a daemon worker, and a worker is less mysterious
+than the name suggests. It is one operating system process running one asyncio
+event loop. Every AiiDA process that worker is looking after is a coroutine on
+that single loop. This is why a workchain waiting three days for a scheduler
+job costs almost nothing: it is a suspended coroutine, so it holds no thread
+and no connection.
 
-There is a second watcher, but only sometimes. If the profile uses ZeroMQ, and
-nothing is already serving on its socket, AiiDA adds a watcher for the broker
-itself. With RabbitMQ that never happens, because RabbitMQ is a system service
-under systemd and there is nothing for AiiDA to supervise. That difference is
-the whole "no services required" story, and we come back to it later.
+Then the control commands. Verdi daemon status, incr, decr and stop all speak
+to circus, and they only ever do process management: how many workers, are they
+alive, stop them. The channel is an IPC socket. IPC stands for inter-process
+communication, and the socket is a Unix domain socket, which is a file on disk
+rather than a network port. That file lives in a temporary directory, with a
+per-profile pointer to it under the AiiDA config directory, at
+daemon/circus-<profile>.sockets. Being a file rather than a port is why this
+only works from the same machine. The commands are sent as RPC, remote
+procedure call, which just means you send a request naming an operation and its
+arguments and get an answer back. Remote here means another process, not
+another machine.
 
-Now the worker itself, on the right. One worker is one operating system
-process, running one asyncio event loop. Every AiiDA process it is looking
-after is a coroutine on that single loop. That is why a workchain waiting three
-days for a scheduler job costs nothing: it is a suspended coroutine, not a
-thread and not a held connection.
+Now the broker, which is the second half. Submit does not touch circus at all.
+When you call submit, the process is written to the database, and a message is
+put on the broker. That message is smaller than people expect: a task named
+continue carrying a process id, and that id is the primary key of the
+ProcessNode, the same number verdi process list prints. It is not an operating
+system process id. So the message carries no state whatsoever. The worker that
+picks it up loads that node, reads the checkpoint out of its attributes,
+deserialises it back into a live process object, and continues stepping it.
+Everything it needs was already in the database before the message was sent.
 
-The last bullet is the thing people conflate, so it is worth saying slowly.
-There are two separate channels here. Verdi daemon start, status, incr, decr
-and stop all speak to circus, over circus's own control socket, and they only
-ever do process management. Submit does not touch circus at all: it goes to the
-broker. Two sockets, two protocols, and two independent ways for things to go
-wrong. You can have a healthy daemon and an unreachable broker, or the reverse.
+The broker carries three kinds of traffic, and they behave differently. The
+task queue is the durable one: work that some worker must eventually pick up.
+Exactly one worker takes each task, and the acknowledgement is deferred until
+the process reaches a terminal state, so if you stop the daemon halfway the
+task was never acknowledged, it gets redelivered, and the process resumes from
+its last checkpoint. Second, RPC, the same idea as before but addressed to one
+specific running process by its primary key. That is what verdi process pause,
+play and kill use, which is also why those commands need a running daemon.
+Third, broadcasts, which are fan-out notices such as state changed. That is the
+mechanism behind a parent workchain waking up when its child finishes.
 
-Q:
+A fair question here is why a broker is needed at all, when circus manages fine
+with a plain socket. The answer is that a socket is only a transport. In fact
+AiiDA's own ZeroMQ broker binds an IPC socket too, so the transport is the same
+family. What the broker adds is queue semantics: messages that survive a
+restart, a sender and a receiver that need not be alive at the same time,
+distribution across several workers each with a prefetch limit, and fan-out to
+many listeners. A bare socket drops the message when nobody is listening.
 
-Script:
+Finally, both of those sit behind one Communicator interface, which is why
+RabbitMQ and ZeroMQ are interchangeable. The engine genuinely cannot tell which
+one it is running on. ZeroMQ is a socket library rather than a broker, so for
+that option AiiDA implements the broker itself, including a persistent
+folder-based queue. RabbitMQ remains the choice when the workers live on
+another host, because an IPC socket is same-machine only.
 
-So if the daemon is process supervision, the broker is the part that actually
-moves work around. This slide is what travels between the two.
-
-Start with the message at the top, because it is smaller than people expect.
-When you call submit, what ends up on the broker is a task named continue,
-carrying a process id and a couple of flags. That is it. And the pid here is
-not an operating system pid: it is the primary key of the ProcessNode in the
-database, the same number verdi process list prints.
-
-Which means the message carries no state at all. The worker that picks it up
-loads that node, reads the checkpoint out of its attributes, deserialises it
-back into a live process object, and continues stepping it. All the state was
-already in the database before the message was sent. That is why any worker can
-take any task, why the daemon can be restarted underneath a running workflow,
-and why losing the database loses your running workflows while losing the
-broker only loses the nudge.
-
-The broker carries three kinds of traffic. The task queue is the durable one,
-work that some worker must eventually pick up. RPC is addressed to one specific
-running process by its pid, and that is what verdi process pause, play and kill
-use, which is also why those need a running daemon. And broadcasts are
-fan-out state-changed notices, which is the mechanism behind a parent workchain
-waking up when its child finishes.
-
-Then the flow control. Each worker declares a prefetch, which comes from
-worker_process_slots in the profile config, and the acknowledgement is deferred
-until the process reaches a terminal state. So a slot is not a queued message,
-it is a running process. Stop the daemon halfway and the task was never
-acknowledged, so it is redelivered and the process resumes from its last
-checkpoint.
-
-And all of that sits behind one kiwipy Communicator interface, which is why
-RabbitMQ and ZeroMQ are interchangeable here. The engine genuinely cannot tell
-which one it is running on.
 -->
 
 ---
@@ -625,10 +612,11 @@ classDiagram
 </div>
 </div>
 
-<div class="text-sm pt-1">
+<div class="text-sm pt-1 compact">
 
-- Two plugin interfaces: file transfer and remote commands, job submission
-- `aiida-firecrest`, external transport & scheduler implementation for the FirecREST API (developed by CSCS)
+- `CalcJob`: the plugin interface to one simulation code
+- `Transport` and `Scheduler`: file transfer and remote commands, job submission
+- `aiida-firecrest`: transport and scheduler for the FirecREST API, from CSCS
 - `TransportQueue`: one shared transport per computer and user
 - `JobsList`: one `squeue` per computer per polling interval, fanned out
 - Exponential backoff on transport tasks, ending in a paused state
@@ -673,14 +661,16 @@ verdi presto
 
 <div class="text-sm pt-4">
 
-- RabbitMQ the only broker until v2.9, now also ZeroMQ
-- Started and supervised by the daemon
-- IPC sockets, local only
+- RabbitMQ the only broker until v2.9
+- Now also ZeroMQ
+  - Started and supervised by the daemon (RMQ runs as OS background process)
+  - IPC sockets, local only
 - Workers on another host still need RabbitMQ
 
 </div>
 
 <div class="refs">
+<i>Released in v2.5.0 · Add the <code>SqliteDosStorage</code> storage backend</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/6148">github.com/aiidateam/aiida-core/pull/6148</a><br>
 <i>Released in v2.9.0 · Add ZeroMQ-based message broker plugin</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/7284">github.com/aiidateam/aiida-core/pull/7284</a>
 </div>
 
@@ -694,8 +684,7 @@ Q:
 
 <div class="text-sm pt-1 pb-2">
 
-- An AiiDA profile: one database, one file repository, one broker. A node lives in
-  exactly one profile
+- An AiiDA profile: one database, one file repository, one broker
 
 </div>
 
@@ -764,34 +753,38 @@ Q:
 
 ---
 
-# v3: Consolidation into core
+# v3
 
 <div class="grid grid-cols-2 gap-6 pt-3 text-sm">
 <div>
 
-**What is moving**
+**Consolidation into core**
 
-- `plumpy`, the process state machine
+- `aiidateam/plumpy`, the process state machine
 - The workflow construction ecosystem:
   - `aiida-shell`: cmd execution without plugins
   - `aiida-pythonjob`: execute Python on remote
   - `node-graph`: graph-based workflow API
   - `aiida-workgraph`: exec layer of `node-graph` API
+- Frequent releases for minor upstream changes
+- Blurred package boundaries, and the coupling that follows
+- Easier reasoning on architecture, code deduplication
 
 </div>
 <div>
 
-**Why**
+**Directions**
 
-- Minor changes of upstream packages need frequent releases
-- Blurred boundaries between the packages, and coupling that follows from them
-- Easier reasoning on architecture 
-- Code deduplication
-- Separation into `core` and `user` API
-- Still open to extensions through ABCs and entry points
 - Less inheritance, more composition
+- Still open to extensions through ABCs and entry points
+- ORM and storage redesigns
 
 </div>
+</div>
+
+<div class="refs">
+<i>Redesign ORM with Pydantic-first mindset</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7391">github.com/aiidateam/aiida-core/issues/7391</a><br>
+<i>v3: Storage architecture redesign</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7510">github.com/aiidateam/aiida-core/issues/7510</a>
 </div>
 
 <!--
@@ -800,7 +793,32 @@ Q:
 
 ---
 
-# Workflow construction
+# v3: User and core API
+
+<div class="text-sm pt-3">
+
+- Most symbols re-exported upwards: `orm.StructureData`
+- Deep paths still reachable: `aiida.orm.nodes.data.structure`
+- Convention: below the second level private, unenforced
+- v3: small `core` and `user` modules, importing and re-exporting explicitly
+- Everything outside them internal, free to change
+- Compatibility promise only for what those two export
+- Per-module migration files, to upgrade plugins automatically
+
+</div>
+
+<div class="refs">
+<i>AEP v3: clear public and private API</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7410">github.com/aiidateam/aiida-core/issues/7410</a><br>
+<i>v3: user/core API revision</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/7562">github.com/aiidateam/aiida-core/pull/7562</a>
+</div>
+
+<!--
+Q:
+-->
+
+---
+
+# v3: Workflow construction
 
 <div class="grid grid-cols-2 gap-6 text-xs">
 <div>
@@ -862,7 +880,7 @@ Q:
 
 ---
 
-# The graph exists before it runs
+# v3: The workflow as an object
 
 <div class="grid grid-cols-2 gap-6 pt-2">
 <div class="flex items-center">
@@ -872,8 +890,8 @@ Q:
 
 - `AddMultiply.build(...)`: an object, before submission
 - Inspectable and editable in Python, then run
-- The GUI: a view of it, tasks, sockets, links
-- A `WorkChain`: structure only as the outline executes
+- GUI: tasks, sockets, links
+- `WorkChain`: nothing to inspect before it runs
 
 </div>
 </div>
@@ -901,7 +919,7 @@ src/aiida_agents/
 ```
 
 - Explore, inspect, diagnose, look up the docs, set up, run
-- Typed tool calls against ones' actual provenance graph
+- Typed tool calls against your own provenance graph
 - Writes behind an explicit approval gate
 - Provider agnostic, supporting self-hosted local models 
 
@@ -913,6 +931,7 @@ src/aiida_agents/
 - `AI_POLICY.md`: a responsible human author per PR
 - `AGENTS.md` and 10 Claude Code skills in-repo
 - CodeRabbit reviews on every non-draft PR
+- Large-scale architectural changes within reach through the help of agents
 
 </div>
 </div>
@@ -1017,7 +1036,7 @@ Q:
 <div>
 
 - Public demo, institutional JupyterHubs, or local Docker
-- The same engine underneath, without `verdi`
+- `aiida-core` as the engine underneath
 
 </div>
 </div>
@@ -1032,13 +1051,26 @@ Q:
 -->
 
 ---
+class: text-center
+---
 
-# Thanks
+<div class="flex flex-col justify-center" style="height: 100%">
 
-<div class="pt-8 text-sm opacity-70">
+# Thanks!
 
-Julian Geiger · julian.geiger@psi.ch
+<div class="pt-1 text-lg opacity-60">Questions?</div>
 
+<div class="flex justify-center pt-10">
+  <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 44px" />
+</div>
+
+</div>
+
+<div class="refs center">
+<a href="https://aiida.net">aiida.net</a> &nbsp;·&nbsp;
+<a href="https://aiida.readthedocs.io">aiida.readthedocs.io</a> &nbsp;·&nbsp;
+<a href="https://github.com/aiidateam/aiida-core">github.com/aiidateam/aiida-core</a> &nbsp;·&nbsp;
+<i>v3 board</i> <a href="https://github.com/orgs/aiidateam/projects/21">github.com/orgs/aiidateam/projects/21</a>
 </div>
 
 <!--
@@ -1046,625 +1078,6 @@ Q:
 -->
 
 ---
-layout: section
+src: ./backup.md
+hide: true
 ---
-
-# Backup
-
-<!--
-Q:
--->
-
----
-
-# Common misconceptions
-
-<div class="text-sm pt-4">
-
-- "AiiDA is a DAG scheduler": the DAG records what already ran
-- The daemon orchestrates, the cluster scheduler runs the compute
-- Workers are asynchronous, one handles many jobs
-- The database holds engine state as well as provenance; losing it loses
-  running workflows
-
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Engine
-
----
-
-# Process states
-
-<div class="grid grid-cols-9 gap-2 pt-2">
-<div class="col-span-4 text-sm">
-
-```python
-class Created(State):
-    LABEL = ProcessState.CREATED
-    ALLOWED = {
-        ProcessState.RUNNING,
-        ProcessState.KILLED,
-        ProcessState.EXCEPTED,
-    }
-```
-
-</div>
-<div class="col-span-5 text-sm">
-
-- Six states: `CREATED`, `RUNNING`, `WAITING`, `FINISHED`, `EXCEPTED`, `KILLED`
-- Legal transitions declared per state class
-- A decade in `plumpy`, now merged into core in September
-
-</div>
-</div>
-
-<div class="refs">
-<i>Integrate plumpy into aiida-core</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/7587">github.com/aiidateam/aiida-core/pull/7587</a>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# The state machine
-
-```python
-future = self.submit(RelaxWorkChain, structure=structure)
-self.to_context(relaxations=append_(future))
-```
-
-<div class="text-sm pt-4">
-
-- `Waiting`: no thread held, no connection held
-- Broker broadcast on child termination as the wake-up
-- `CalcJob`, a second state machine: upload, submit, update, stash, retrieve
-- Exponential-backoff retry per step
-
-</div>
-
-<!--
-Q:
--->
-
----
-
-# The checkpoint, in full
-
-<div class="text-xs">
-
-```yaml
-!aiida:bundle
-'!!meta':
-  class_name: aiida.workflows.arithmetic.multiply_add:MultiplyAddWorkChain
-  types: {_event_helper: S, _future: S}
-  user: {object_loader: aiida.common.loaders:DefaultObjectLoader}
-CONTEXT: !aiida_attributedict {}
-INPUTS_RAW: '!aiida:attributes_frozendict
-  code: !aiida_node ''005332ea-1013-4c48-817e-1cc05459dc63''
-  x: !aiida_node ''4ea9b679-d8c2-4b77-a653-1115a98083ef''
-  y: !aiida_node ''c5f47a83-ee64-4033-a054-83e0d920269f''
-  z: !aiida_node ''2a66bc2e-408c-4d8a-90af-2d92ebabf856'''
-_awaitables: []
-_state:
-  '!!meta': {class_name: aiida.engine.processes.states:Created}
-  run_fn: run
-  in_state: true
-_pid: 5
-calc_id: 5
-```
-
-</div>
-
-<div class="text-sm pt-2">
-
-- A `MultiplyAddWorkChain` before its first step, 1534 characters
-- Nodes by UUID reference, so a large input costs nothing here
-- `_state` names the state class; `CONTEXT` fills as `to_context` results arrive
-- Stored as the `checkpoints` attribute on the process node
-
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Storage
-
----
-
-# Why an object store
-
-<div class="grid grid-cols-2 gap-8 pt-4 text-sm">
-<div>
-
-MC3D provenance archive:
-
-| | |
-| --- | --- |
-| nodes | 535,005 |
-| links | 1,257,350 |
-| distinct objects | 837,443 |
-| median object | 512 B |
-| under 1 KiB | 59.6 % |
-
-</div>
-<div>
-
-- Most objects are smaller than a 4 KiB block
-- Loose layout wastes ~2.2x in disk blocks
-- Inode limits have been hit in practice
-
-<div class="pt-4 text-xs opacity-60">
-
-"a common filesystem has a maximum number of inodes … we already have experience
-of AiiDA repositories that hit this limit" (<a href="https://github.com/aiidateam/AEP/blob/master/006_efficient_object_store_for_repository/readme.md">github.com/aiidateam/AEP/blob/master/006_efficient_object_store_for_repository/readme.md</a>)
-
-</div>
-
-</div>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# The concurrency contract
-
-<div class="text-sm pt-4">
-
-| | |
-| --- | --- |
-| readers | any number, any object |
-| writers | any number, loose objects only |
-| packing | one single process |
-| delete, repack, vacuum | exclusive access |
-
-</div>
-
-<div class="text-sm pt-6">
-
-- No guards in the library; AiiDA holds the profile lock
-- Atomic rename is where NFS and Lustre stop guaranteeing
-- Loose objects hurt on parallel filesystems with inode quotas
-
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Reaching HPC
-
----
-
-# Extension points
-
-```python
-computer = Computer(
-    label='daint',
-    transport_type='core.ssh_async',  # core.ssh, core.local, firecrest
-    scheduler_type='core.slurm',  # pbspro, sge, lsf, torque, direct
-)
-```
-
-<div class="text-sm pt-4">
-
-- AiiDA runs on your machine, nothing is installed on the cluster
-- One profile drives several clusters into one graph
-- `Transport`: 63 abstract methods, 31 blocking and 32 async
-- `Scheduler`: 4 abstract methods
-- Also `Parser`, `StorageBackend`, `AbstractCode`, all entry points
-
-</div>
-
-<!--
-Q:
--->
-
----
-
-# Transports: recent work
-
-<div class="text-sm pt-4">
-
-- `core.ssh_async`, file transfers over dedicated data transfer nodes
-- Stashing: explicit workflow step, tracked in the provenance graph
-- `aiida-firecrest` as a `Transport` implementation
-- FirecREST deployed on our 10-node Slurm cluster at PSI
-- Workchain from a workstation ran to completion through it
-
-</div>
-
-<div class="refs">
-<i>Transport: AsyncTransport plugin</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/6626">github.com/aiidateam/aiida-core/pull/6626</a>
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Workflow tooling
-
----
-
-# aiida-shell and aiida-pythonjob
-
-```python
-from aiida_shell import launch_shell_job
-
-results, node = launch_shell_job('date')
-print(results['stdout'].get_content())
-```
-
-```python
-@task.pythonjob
-def add(x: int, y: int) -> int:
-    return x + y
-
-
-@task.graph
-def RemoteAdd(x: int, y: int, computer: str) -> int:
-    return add(x=x, y=y, computer=computer).result
-
-
-wg = RemoteAdd.build(x=1, y=2, computer='localhost')
-```
-
-<!--
-Q:
--->
-
----
-
-# aiida-agents
-
-```text
-src/aiida_agents/
-├─ agents/     analysis · codegen · execution · planner
-├─ mcp/        MCP server, read-only tool registrations
-├─ rag/        chunking, embedding, retrieval, citations
-├─ sandbox/    profile copying, code runner, static guard
-└─ tools/      the typed tool functions
-```
-
-<div class="text-sm pt-4">
-
-- Google Summer of Code 2026
-- Answers against your own provenance graph
-- Every answer comes from a typed tool call
-- Writes gated behind an explicit approval
-
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Interoperability
-
----
-
-# Python Workflow Definition
-
-<div class="grid grid-cols-2 gap-4 text-xs">
-<div>
-
-```json
-{
-  "version": "0.1.0",
-  "nodes": [
-    {"id": 0, "type": "function", "value": "workflow.get_prod_and_div"},
-    {"id": 1, "type": "function", "value": "workflow.get_sum"},
-    {"id": 2, "type": "function", "value": "workflow.get_square"},
-    {"id": 3, "type": "input", "value": 1, "name": "x"},
-    {"id": 4, "type": "input", "value": 2, "name": "y"},
-    {"id": 5, "type": "output", "name": "result"}
-  ],
-  "edges": [
-    {"target": 0, "targetPort": "x", "source": 3, "sourcePort": null},
-    {"target": 0, "targetPort": "y", "source": 4, "sourcePort": null},
-    {"target": 1, "targetPort": "x", "source": 0, "sourcePort": "prod"},
-    {"target": 1, "targetPort": "y", "source": 0, "sourcePort": "div"},
-    {"target": 2, "targetPort": "x", "source": 1, "sourcePort": null},
-    {"target": 5, "targetPort": null, "source": 2, "sourcePort": null}
-  ]
-}
-```
-
-</div>
-<div class="text-sm">
-
-- Three files: `environment.yml`, `workflow.py`, `workflow.json`
-- Nomenclature from the Eclipse Layout Kernel
-- `targetPort`: keyword argument on the receiver
-- `sourcePort`: key of a multi-valued return
-- Functions referenced by dotted import path, no version or hash
-- Built in a WfMS and exported, never written by hand
-
-</div>
-</div>
-
-<div class="refs">
-Janssen, George, Geiger et al., <i>Digital Discovery</i> <b>4</b>, 3149 (2025) ·
-<a href="https://doi.org/10.1039/D5DD00231A">doi.org/10.1039/D5DD00231A</a>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# The format
-
-<div class="grid grid-cols-2 gap-4 text-xs">
-<div>
-
-`workflow.json`
-
-```json
-{
-  "version": "0.1.0",
-  "nodes": [
-    {"id": 0, "type": "function", "value": "workflow.get_prod_and_div"},
-    {"id": 1, "type": "function", "value": "workflow.get_sum"},
-    {"id": 2, "type": "function", "value": "workflow.get_square"},
-    {"id": 3, "type": "input", "value": 1, "name": "x"},
-    {"id": 4, "type": "input", "value": 2, "name": "y"},
-    {"id": 5, "type": "output", "name": "result"}
-  ],
-  "edges": [
-    {"target": 0, "targetPort": "x", "source": 3, "sourcePort": null},
-    {"target": 0, "targetPort": "y", "source": 4, "sourcePort": null},
-    {"target": 1, "targetPort": "x", "source": 0, "sourcePort": "prod"},
-    {"target": 1, "targetPort": "y", "source": 0, "sourcePort": "div"},
-    {"target": 2, "targetPort": "x", "source": 1, "sourcePort": null},
-    {"target": 5, "targetPort": null, "source": 2, "sourcePort": null}
-  ]
-}
-```
-
-</div>
-<div>
-
-`workflow.py`
-
-```python
-def get_prod_and_div(x, y):
-    return {'prod': x * y, 'div': x / y}
-
-
-def get_sum(x, y):
-    return x + y
-
-
-def get_square(x):
-    return x**2
-```
-
-<div class="pt-4">
-
-- `targetPort`: keyword argument on the receiver
-- `sourcePort`: key of a multi-valued return
-- Functions referenced by dotted import path
-- No version, no hash, no signature
-
-</div>
-
-</div>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# Export and import
-
-```python
-from python_workflow_definition.aiida import write_workflow_json
-from aiida_workgraph import WorkGraph, task
-
-wg = WorkGraph('arithmetic')
-prod_div = wg.add_task(
-    task(outputs=['prod', 'div'])(get_prod_and_div),
-    x=orm.Float(1),
-    y=orm.Float(2),
-)
-total = wg.add_task(
-    get_sum, x=prod_div.outputs.prod, y=prod_div.outputs.div
-)
-write_workflow_json(wg=wg, file_name='workflow.json')
-```
-
-```python
-from python_workflow_definition.jobflow import load_workflow_json
-
-flow = run_locally(load_workflow_json(file_name='workflow.json'))
-```
-
-<!--
-Q:
--->
-
----
-
-# Engine support, and the gaps
-
-<div class="text-sm">
-
-| Engine | Import | Export |
-| --- | --- | --- |
-| aiida-workgraph, jobflow, pyiron_base, pyiron_workflow | yes | yes |
-| executorlib, pure Python | yes, executes immediately | no |
-| CWL | no | one-way |
-| PerQueue | prototype in a separate repo | |
-| SimStack, Airflow, ewoks | nothing in the repo | |
-
-</div>
-
-<div class="text-sm pt-4">
-
-- DAGs only: no loops, no conditionals, no growth at runtime
-- No compute resources, no results; the template travels alone
-- A `while` encoding designed at MADICES 2025, still unlanded
-
-</div>
-
-<!--
-Q:
--->
-
----
-layout: section
----
-
-# Open for v3
-
-<div class="text-sm pb-2">
-
-All at <a href="https://github.com/aiidateam/aiida-core/issues">github.com/aiidateam/aiida-core/issues</a>
-
-</div>
-
-<div class="grid grid-cols-2 gap-6 text-xs">
-<div>
-
-- <a href="https://github.com/aiidateam/aiida-core/issues/7406">7406</a> &nbsp;Parent issue for v3
-- <a href="https://github.com/aiidateam/aiida-core/issues/7479">7479</a> &nbsp;Consolidate the workflow and execution ecosystem into core
-- <a href="https://github.com/aiidateam/aiida-core/issues/7546">7546</a> &nbsp;Integrate `aiida-shell` into `aiida-core`
-- <a href="https://github.com/aiidateam/aiida-core/issues/7410">7410</a> &nbsp;Clear public and private API
-- <a href="https://github.com/aiidateam/aiida-core/issues/7562">7562</a> &nbsp;User/core API revision
-- <a href="https://github.com/aiidateam/aiida-core/issues/7555">7555</a> &nbsp;Remove deprecated API
-- <a href="https://github.com/aiidateam/aiida-core/issues/7401">7401</a> &nbsp;Untangle the `Code` hierarchy
-- <a href="https://github.com/aiidateam/aiida-core/issues/7556">7556</a> &nbsp;Redesign the `Data` hierarchy
-
-</div>
-<div>
-
-- <a href="https://github.com/aiidateam/aiida-core/issues/7501">7501</a> &nbsp;Data-node mutability, and `aiida-atomistic`
-- <a href="https://github.com/aiidateam/aiida-core/issues/7510">7510</a> &nbsp;Storage architecture redesign
-- <a href="https://github.com/aiidateam/aiida-core/issues/7509">7509</a> &nbsp;Storage backend abstraction in the wrong place
-- <a href="https://github.com/aiidateam/aiida-core/issues/7511">7511</a> &nbsp;Implementation layer is not the implementation layer
-- <a href="https://github.com/aiidateam/aiida-core/issues/7559">7559</a> &nbsp;Redesign `Entity.fields`
-- <a href="https://github.com/aiidateam/aiida-core/issues/7481">7481</a> &nbsp;Pull and push collaborative projects
-- <a href="https://github.com/aiidateam/aiida-core/issues/7415">7415</a> &nbsp;Remove `core.ssh`, rename `core.ssh_async`
-- <a href="https://github.com/aiidateam/aiida-core/issues/7403">7403</a> &nbsp;Type-check all of `src/aiida`
-
-</div>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# Project
-
----
-
-# Type coverage
-
-<div class="grid grid-cols-2 gap-8 pt-6 text-sm">
-<div>
-
-| | |
-| --- | --- |
-| Jun 2020 | 2 / 538 files |
-| Dec 2022 | 412 / 575 |
-| today | 558 / 652 (85.6 %) |
-
-</div>
-<div>
-
-- `mypy strict = true`, five flags still disabled
-- 503 errors left in 74 files
-- `storage` and `restapi` are 55 % of them
-
-</div>
-</div>
-
-<div class="refs">
-<i>v3: Type-check all of src/aiida</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7403">github.com/aiidateam/aiida-core/issues/7403</a>
-</div>
-
-<!--
-Q:
--->
-
----
-
-# Where this touches WP4
-
-<div class="text-sm pt-4">
-
-| | |
-| --- | --- |
-| T4.3, we lead | PWD across AiiDA, pyiron, PerQueue, SimStack |
-| T4.1 | reusable parsers across engines: ours are plugins, registered by entry point |
-| T4.4 | FAIR software: `Code`, `Computer`, containers |
-| T4.5 | semantic annotation; we have typed ports, no semantics |
-
-</div>
-
-<div class="text-sm pt-6">
-
-- Open: cross-site data transfer
-- Open: FirecREST beyond CSCS as project effort
-
-</div>
-
-<!--
-Q:
--->
-
----
-
-# References
-
-<div class="text-xs pt-4">
-
-- Huber et al., *AiiDA 1.0*, Sci. Data **7**, 300 (2020)
-- Uhrin et al., *Workflows in AiiDA*, Comput. Mater. Sci. **187**, 110086 (2021)
-- Janssen, George, Geiger et al., *A Python workflow definition*, Digital Discovery **4**, 3149 (2025)
-- Talirz et al., *Materials Cloud*, Sci. Data **7**, 299 (2020)
-- Yakutovich et al., *AiiDAlab*, Comput. Mater. Sci. **188**, 110165 (2021)
-- Huber et al., *Common workflows*, npj Comput. Mater. **7**, 136 (2021)
-- Bosoni et al., *Verifying DFT precision*, Nat. Rev. Phys. **6**, 45 (2023)
-- Storage design: AEP 006, no paper
-
-</div>
-
-<!--
-Q:
--->

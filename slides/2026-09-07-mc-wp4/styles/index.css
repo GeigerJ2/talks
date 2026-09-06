@@ -75,3 +75,7 @@
 .slidev-layout .compact ul > li {
   margin-bottom: 0.5em;
 }
+
+.slidev-layout ul > li > ul {
+  margin-top: 0.7em;
+}

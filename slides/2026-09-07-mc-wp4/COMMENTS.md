@@ -24,7 +24,7 @@
 
 ## The daemon and the broker
 
-## Daemon and broker, together
+## The daemon and the broker
 
 ## `verdi`, the command line
 
@@ -38,11 +38,13 @@
 
 ## Current efforts
 
-## v3: Consolidation into core
+## v3
 
-## Workflow construction
+## v3: User and core API
 
-## The graph exists before it runs
+## v3: Workflow construction
+
+## v3: The workflow as an object
 
 ## Agents
 
@@ -54,4 +56,4 @@
 
 ## AiiDAlab
 
-## Thanks
+## Thanks!
