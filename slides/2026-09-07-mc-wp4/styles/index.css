@@ -65,3 +65,13 @@
 .slidev-layout .refs.center {
   text-align: center;
 }
+
+.title-hero h1 {
+  font-size: 2.7rem;
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+
+.slidev-layout .compact ul > li {
+  margin-bottom: 0.5em;
+}
