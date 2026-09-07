@@ -804,31 +804,6 @@ Q:
 
 ---
 
-# v3: User and core API
-
-<div class="text-sm pt-3">
-
-- Most symbols re-exported upwards: `orm.StructureData`
-- Deep paths still reachable: `aiida.orm.nodes.data.structure`
-- Convention: below the second level private, unenforced
-- v3: small `core` and `user` modules, importing and re-exporting explicitly
-- Everything outside them internal, free to change
-- Compatibility promise only for what those two export
-- Per-module migration files, to upgrade plugins automatically
-
-</div>
-
-<div class="refs">
-<i>AEP v3: clear public and private API</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7410">github.com/aiidateam/aiida-core/issues/7410</a><br>
-<i>v3: user/core API revision</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/7562">github.com/aiidateam/aiida-core/pull/7562</a>
-</div>
-
-<!--
-Q:
--->
-
----
-
 # v3: Workflow construction
 
 <div class="grid grid-cols-2 gap-6 text-xs">
@@ -905,6 +880,30 @@ Q:
 - `WorkChain`: nothing to inspect before it runs
 
 </div>
+</div>
+
+<!--
+Q:
+-->
+
+---
+
+# v3: User and core API
+
+<div class="text-sm pt-3">
+
+- Most symbols re-exported upwards: `orm.StructureData`
+- Deep paths still reachable: `aiida.orm.nodes.data.structure`
+- Convention: below the second level private, unenforced
+- v3: small `core` and `user` modules, importing and re-exporting explicitly
+- Everything outside them internal, free to change
+- Per-module migration files, to upgrade plugins automatically
+
+</div>
+
+<div class="refs">
+<i>AEP v3: clear public and private API</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/issues/7410">github.com/aiidateam/aiida-core/issues/7410</a><br>
+<i>v3: user/core API revision</i> &nbsp;<a href="https://github.com/aiidateam/aiida-core/pull/7562">github.com/aiidateam/aiida-core/pull/7562</a>
 </div>
 
 <!--
