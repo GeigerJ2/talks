@@ -182,7 +182,6 @@ Q:
 - the file repository, `disk-objectstore`:
   - content-addressed by SHA-256, deduplicated
   - raw files, never queried by content
-  - one `loose` file per new object, packed by `verdi storage maintain`
 - Only file-content hash crossing between both
 
 </div>
@@ -210,6 +209,9 @@ loose/aa/bbcc…   one file per object
 packs/0,1,2      append-only, 4 GiB target
 packs.idx        SQLite: hash → pack, offset
 ```
+
+one `loose` file per new object, packed by `verdi storage maintain`
+
 
 </div>
 </div>
@@ -262,7 +264,7 @@ classDiagram
 </div>
 <div class="col-span-3 text-sm pt-4">
 
-- Python classes over database rows
+- Interact with DB objects as Python classes
 - `Entity`: pk, uuid, `store()`
 - `Node`: links, attributes, extras, file repository
 - `Data` subclasses: primitives, files, folders, structures, arrays
@@ -381,8 +383,8 @@ node = submit(SomeWorkChain, **inputs)  # returns immediately
 - Daemon worker --- background Python process with an event loop --- picks it up
 - Process rebuilt from its checkpoint, stepped to the next state
 - Every `Process` is a state machine: `CREATED`, `RUNNING`, `WAITING`, `FINISHED`, `EXCEPTED`, `KILLED`
-- `CalcJob`: the process wrapping one simulation code
 - Checkpoint rewritten at every transition: a killed daemon resumes
+- `CalcJob`: the process wrapping one simulation code
 
 </div>
 
@@ -401,15 +403,13 @@ Q:
 - `verdi daemon start N`: N workers, supervised by `circus`
 - One worker: one OS process, one asyncio loop
 - Each AiiDA process: a coroutine on that loop
-- `verdi daemon status|incr|decr|stop`: circus RPC over an IPC socket
 
 **Broker**
 
 - The message layer between `submit()`, the workers, and `verdi`
-- Task queue: one worker per task, kept until finished
 - RPC: pause, play, kill one running process by its pk
 - Broadcast: `state_changed`, subscribed to by waiting workchains
-- RabbitMQ and ZeroMQ behind one `Communicator` interface
+- RabbitMQ and ZeroMQ as available brokers
 
 </div>
 
@@ -623,7 +623,7 @@ classDiagram
 - `Transport` and `Scheduler`: file transfer and remote commands, job submission
 - `aiida-firecrest`: transport and scheduler for the FirecREST API, from CSCS
 - `TransportQueue`: one shared transport per computer and user
-- `JobsList`: one `squeue` per computer per polling interval, fanned out
+- One `squeue` per computer per polling interval
 - Exponential backoff on transport tasks, ending in a paused state
 
 </div>
@@ -670,11 +670,10 @@ verdi presto
 
 <div class="text-sm pt-4">
 
-- RabbitMQ the only broker until v2.9
-- Now also ZeroMQ
-  - Started and supervised by the daemon (RMQ runs as OS background process)
-  - IPC sockets, local only
-- Workers on another host still need RabbitMQ
+- PostgreSQL the only database until v2.5, now also SQLite (a file, no server)
+- RabbitMQ the only broker until v2.9, now also ZeroMQ
+- ZeroMQ Broker started and supervised by the daemon (RMQ runs as OS background process)
+- IPC sockets, local only; workers on another host (currently) still need RabbitMQ
 
 </div>
 
