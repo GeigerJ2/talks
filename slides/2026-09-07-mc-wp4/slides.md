@@ -17,7 +17,10 @@ MaterialsCommons WP4 · 7 September 2026
 
 </div>
 <div class="flex flex-col items-center gap-10" style="flex: 0 0 310px">
-  <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 48px" />
+  <div class="flex items-center gap-6">
+    <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 48px" />
+    <img src="/logos/materialscommons/logo_mc.png" alt="MaterialsCommons" style="height: 62px" />
+  </div>
   <img src="/workchain-graph.png" alt="Provenance graph of a MultiplyAddWorkChain run" style="max-width: 100%" />
 </div>
 </div>
@@ -45,7 +48,7 @@ Q:
 
 <div class="text-center pt-14 italic opacity-80">
 
-The difference lies in their focus and in architecture.
+The difference lies in their foundations and architecture.
 
 </div>
 
@@ -177,10 +180,10 @@ Q:
 
 - PostgreSQL / SQLite: the graph, plus each node's `attributes` and `extras` as JSONB
 - the file repository, `disk-objectstore`:
-  - content-addressed, keyed by SHA-256, deduplicated
+  - content-addressed by SHA-256, deduplicated
   - raw files, never queried by content
   - one `loose` file per new object, packed by `verdi storage maintain`
-- Only file-content SHA-256 crossing between both
+- Only file-content hash crossing between both
 
 </div>
 
@@ -195,7 +198,7 @@ Q:
           "calcinfo.json": {"k": "58d7e318…f782a"}}}}}
 ```
 
-`o` for `objects`, the entries in a directory; `k` for `key`, the SHA-256
+`o` for `objects`, recursive; `k` for `key`, the SHA-256
 
 </div>
 <div class="text-xs">
@@ -378,6 +381,7 @@ node = submit(SomeWorkChain, **inputs)  # returns immediately
 - Daemon worker --- background Python process with an event loop --- picks it up
 - Process rebuilt from its checkpoint, stepped to the next state
 - Every `Process` is a state machine: `CREATED`, `RUNNING`, `WAITING`, `FINISHED`, `EXCEPTED`, `KILLED`
+- `CalcJob`: the process wrapping one simulation code
 - Checkpoint rewritten at every transition: a killed daemon resumes
 
 </div>
@@ -405,7 +409,7 @@ Q:
 - Task queue: one worker per task, kept until finished
 - RPC: pause, play, kill one running process by its pk
 - Broadcast: `state_changed`, subscribed to by waiting workchains
-- RabbitMQ or ZeroMQ behind one `Communicator` interface
+- RabbitMQ and ZeroMQ behind one `Communicator` interface
 
 </div>
 
@@ -495,6 +499,8 @@ another host, because an IPC socket is same-machine only.
 
 -->
 
+---
+hide: true
 ---
 
 # The daemon and the broker
@@ -614,7 +620,6 @@ classDiagram
 
 <div class="text-sm pt-1 compact">
 
-- `CalcJob`: the plugin interface to one simulation code
 - `Transport` and `Scheduler`: file transfer and remote commands, job submission
 - `aiida-firecrest`: transport and scheduler for the FirecREST API, from CSCS
 - `TransportQueue`: one shared transport per computer and user
@@ -654,10 +659,14 @@ Q:
 
 # No services required
 
+<div class="text-sm pt-2">
+
 ```bash
 pip install aiida-core
 verdi presto
 ```
+
+</div>
 
 <div class="text-sm pt-4">
 
@@ -688,12 +697,14 @@ Q:
 
 </div>
 
-<div class="grid grid-cols-9 gap-3">
-<div class="col-span-5 text-xs">
+<div class="grid grid-cols-12 gap-4">
+<div class="col-span-3 text-xs">
 
 ```bash
-# first install PostgreSQL and RabbitMQ, create the
-# database and its user, then describe what you built
+# install PostgreSQL
+# and RabbitMQ, create
+# the database and its
+# user, then describe it
 verdi setup \
     --database-engine \
     --database-backend \
@@ -712,24 +723,24 @@ verdi setup \
 ```
 
 </div>
-<div class="col-span-4 text-sm">
+<div class="col-span-9 text-xs">
 
-```bash
-verdi quicksetup
-# created the database for you,
-# still needed both services running
+```text
+$ verdi presto --use-zeromq
+Report: Option `--use-postgres` not enabled: configuring the profile to use SQLite.
+Report: `--use-zeromq` enabled: configuring the profile with ZeroMQ broker.
+Report: Initialising the storage backend.
+Report: Migrating to the head of the main branch
+Report: Storage initialisation completed.
+Success: Created new profile `presto`.
+Success: Configured the localhost as a computer.
 ```
 
-```bash
-verdi presto
-# v2.6: no required options
-# v2.9: no services either
-```
+<div class="text-sm pt-3 compact">
 
-<div class="pt-3">
-
+- `verdi quicksetup` created the database, still needed both services
+- `verdi presto`: no required options since v2.6, no services since v2.9
 - Full control retained: `verdi profile setup core.psql_dos`
-- `verdi quicksetup` deprecated
 - **progressive disclosure**
 
 </div>
@@ -753,12 +764,12 @@ Q:
 
 ---
 
-# v3
+# v3: Consolidation into core
 
 <div class="grid grid-cols-2 gap-6 pt-3 text-sm">
 <div>
 
-**Consolidation into core**
+**What is moving**
 
 - `aiidateam/plumpy`, the process state machine
 - The workflow construction ecosystem:
@@ -766,7 +777,7 @@ Q:
   - `aiida-pythonjob`: execute Python on remote
   - `node-graph`: graph-based workflow API
   - `aiida-workgraph`: exec layer of `node-graph` API
-- Frequent releases for minor upstream changes
+- Minor upstream changes require releases
 - Blurred package boundaries, and the coupling that follows
 - Easier reasoning on architecture, code deduplication
 
@@ -776,8 +787,8 @@ Q:
 **Directions**
 
 - Less inheritance, more composition
-- Still open to extensions through ABCs and entry points
 - ORM and storage redesigns
+- Still open to extensions via ABCs, Protocols, and entry points
 
 </div>
 </div>
@@ -823,7 +834,7 @@ Q:
 <div class="grid grid-cols-2 gap-6 text-xs">
 <div>
 
-WorkChain
+`WorkChain`
 
 ```python
 class MultiplyAddWorkChain(WorkChain):
@@ -848,7 +859,7 @@ plus four methods passing data through `self.ctx`
 </div>
 <div>
 
-WorkGraph 0.9.0
+`WorkGraph` (used for PWD)
 
 ```python
 @task
@@ -880,7 +891,7 @@ Q:
 
 ---
 
-# v3: The workflow as an object
+# v3: Workflow as an object
 
 <div class="grid grid-cols-2 gap-6 pt-2">
 <div class="flex items-center">
@@ -890,7 +901,7 @@ Q:
 
 - `AddMultiply.build(...)`: an object, before submission
 - Inspectable and editable in Python, then run
-- GUI: tasks, sockets, links
+- GUI: visualize tasks, sockets, links
 - `WorkChain`: nothing to inspect before it runs
 
 </div>
@@ -921,7 +932,7 @@ src/aiida_agents/
 - Explore, inspect, diagnose, look up the docs, set up, run
 - Typed tool calls against your own provenance graph
 - Writes behind an explicit approval gate
-- Provider agnostic, supporting self-hosted local models 
+- Provider agnostic, supporting local models 
 
 </div>
 <div class="col-span-4 text-sm">
@@ -1060,8 +1071,9 @@ class: text-center
 
 <div class="pt-1 text-lg opacity-60">Questions?</div>
 
-<div class="flex justify-center pt-10">
+<div class="flex justify-center items-center gap-8 pt-10">
   <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 44px" />
+  <img src="/logos/materialscommons/logo_mc.png" alt="MaterialsCommons" style="height: 58px" />
 </div>
 
 </div>

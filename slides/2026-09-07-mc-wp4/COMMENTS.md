@@ -38,13 +38,13 @@
 
 ## Current efforts
 
-## v3
+## v3: Consolidation into core
 
 ## v3: User and core API
 
 ## v3: Workflow construction
 
-## v3: The workflow as an object
+## v3: Workflow as an object
 
 ## Agents
 
