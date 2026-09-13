@@ -17,9 +17,9 @@ MaterialsCommons WP4 · 7 September 2026
 
 </div>
 <div class="flex flex-col items-center gap-10" style="flex: 0 0 310px">
-  <div class="flex items-center gap-6">
-    <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 48px" />
-    <img src="/logos/materialscommons/logo_mc.png" alt="MaterialsCommons" style="height: 62px" />
+  <div class="flex items-center gap-5">
+    <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 34px" />
+    <img src="/logos/materialscommons/logo_mc.svg" alt="MaterialsCommons" style="width: 150px" />
   </div>
   <img src="/workchain-graph.png" alt="Provenance graph of a MultiplyAddWorkChain run" style="max-width: 100%" />
 </div>
@@ -1071,7 +1071,7 @@ class: text-center
 
 <div class="flex justify-center items-center gap-8 pt-10">
   <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 44px" />
-  <img src="/logos/materialscommons/logo_mc.png" alt="MaterialsCommons" style="height: 58px" />
+  <img src="/logos/materialscommons/logo_mc.svg" alt="MaterialsCommons" style="width: 230px" />
 </div>
 
 </div>
