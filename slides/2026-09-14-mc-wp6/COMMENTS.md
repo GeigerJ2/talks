@@ -22,7 +22,7 @@
 
 ## `aiida-agents`
 
-## MCP
+## Guardrails
 
 ## Agents in the ELN
 

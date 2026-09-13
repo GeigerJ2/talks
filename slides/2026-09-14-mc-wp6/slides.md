@@ -60,15 +60,15 @@ D6.2 guidelines, M34 &nbsp;·&nbsp; D6.3 LLM-supported workflows, M42 &nbsp;·&n
 <!--
 Q:
 
-PSI appears in two of the four WP6 tasks, 6.1 and 6.4. We are not in 6.2, the
-joint framework for workflow nodes, and not in 6.3, the AI model training,
-though the kickoff said we could contribute to 6.3 as well.
+- PSI in two of four tasks: 6.1 and 6.4
+- not in 6.2, joint framework for workflow nodes
+- not in 6.3, AI model training, though the kickoff said we could contribute
 
 From the kickoff, 2026-08-17:
-- Francesco Ricci (UCLouvain) leads the AI side for them.
-- This meeting is the showcase round: what each group has, in ELN integration
-  and in workflow visualisation. Ten minutes each, one per group.
-- Keep the WP10 use cases in mind.
+- Francesco Ricci (UCLouvain) leads their AI side
+- this meeting: showcase round, ELN integration and workflow visualisation
+- ten minutes each, one per group
+- keep the WP10 use cases in mind
 -->
 
 ---
@@ -98,8 +98,8 @@ From the kickoff, 2026-08-17:
 <!--
 Q:
 
-Ten seconds of context for anyone who has not met AiiDA. Everything after this
-slide sits on top of it.
+- ten seconds of context for anyone new to AiiDA
+- everything after this slide sits on top of it
 -->
 
 ---
@@ -132,8 +132,9 @@ slide sits on top of it.
 <!--
 Q:
 
-The kickoff asked each group to showcase what it has, in ELN integration and
-in workflow visualisation. WorkGraph is our answer on the visualisation side.
+- kickoff asked each group to show what it has
+- ELN integration and workflow visualisation
+- WorkGraph is our answer on the visualisation side
 
 -->
 
@@ -181,7 +182,7 @@ layout: section
 
 <div class="flex items-center justify-center gap-4 pt-8">
   <img src="/people/msd/square/bainglass_edan.jpg" alt="Edan Bainglass" style="height: 54px; border-radius: 50%" />
-  <div class="text-sm opacity-70">Work by <b>Edan Bainglass</b>, through PREMISE</div>
+  <div class="text-sm opacity-70">Work by <b>Edan Bainglass</b>, through the PREMISE project</div>
 </div>
 
 <div class="refs center">
@@ -191,10 +192,11 @@ layout: section
 <!--
 Q:
 
-PREMISE: Open and Reproducible Materials Science Research, supported by the
-Open Research Data Program of the ETH Board. Its aim was ORD exchange and
-interoperability across experimental platforms (ELN, LIMS) and simulation
-platforms (WFMS). Deliverables and tutorials at ord-premise.org.
+- PREMISE: Open and Reproducible Materials Science Research
+- funded by the Open Research Data Program of the ETH Board
+- aim: ORD exchange across experimental platforms (ELN, LIMS) and simulation
+  platforms (WFMS)
+- deliverables and tutorials at ord-premise.org
 -->
 
 ---
@@ -210,29 +212,29 @@ platforms (WFMS). Deliverables and tutorials at ord-premise.org.
 
 **Proof of concept**, before PREMISE
 
-- Connection widget inside AiiDAlab
-- Experimental data imported from the ELN, becoming workflow input
-- Simulation results exported back, becoming ELN entries
-- Started from AiiDAlab
+- OpenBIS connection widget inside AiiDAlab
+- ELN connection and sample selection, both in AiiDAlab
+- Experimental data in as AiiDA nodes
+- Simulation results back onto the sample
 
 <div class="pt-4"></div>
 
 **Extended in PREMISE**
 
-- Controls added in the ELN: connect to AiiDAlab, send data for simulation
-- Started from the ELN, where the experimentalists work
+- The button moves into the ELN, onto the sample itself
+- The sample identity travels with the request
+- AiiDAlab opens with that sample already imported
 
 </div>
 <div>
 
-**Demonstration steps**, with openBIS
+**Example round trip**, with openBIS
 
-- Mock data generated in the ELN
-- Fetched into AiiDAlab
+- Experimental data recorded in the ELN
+- AiiDAlab launched from the ELN, data fetched into it
 - Simulation workflow prepared, submitted
-- Results retrieved, analysed
-- Exported back to the ELN
-- Inspected there
+- Results retrieved and analysed in AiiDAlab
+- Analysed results exported back onto the ELN sample
 
 </div>
 </div>
@@ -243,7 +245,27 @@ platforms (WFMS). Deliverables and tutorials at ord-premise.org.
 </div>
 
 <!--
-Q:
+Q: what did PREMISE add, if the widget already went both ways?
+
+A:
+- the entry point, not the transfer
+- POC: open AiiDAlab, configure the ELN there, find the sample there
+- extension: a control in the ELN, on the sample itself
+- the link carries the sample identity, so AiiDAlab opens pointed at it
+
+Mechanism, from aiidalab-eln:
+- eln_import.ipynb parses the notebook URL query string
+- passes it to ElnImportWidget(**params)
+- which calls connect_to_eln(eln_instance, sample_uuid, file_name, data_type)
+- import happens on arrival
+
+Caveat:
+- Edan's note says only "controls inside the ELN ... ship ELN data to an
+  AiiDAlab instance"
+- the deep-link detail is read from the code, not from him
+
+Also:
+- the sample stays in openBIS; AiiDA holds derived nodes
 -->
 
 ---
@@ -268,10 +290,12 @@ Peer to peer needs a connector per pair, so the work grows as N². PREMISE explo
 
 **RO-Crate Schema Plus**
 
-- A crate carrying data, metadata, and the schema defining it
-- JSON-LD gives semantics; the schema adds fields, types, relationships
-- From ETH Zurich SIS, with PSI and EMPA
-- AiiDA integration planned, by Bainglass
+- RO-Crate: data files packaged with a metadata file
+- Schema Plus adds the schema: fields, types, relationships
+- One reader per platform, serving every sender
+- A crate arrives self-describing, needing no agreed profile
+- From the openBIS developers at ETH Zurich
+- AiiDA integration planned
 
 </div>
 
@@ -279,11 +303,11 @@ Peer to peer needs a connector per pair, so the work grows as N². PREMISE explo
 
 <div class="h-14 flex items-center"><img src="/logos/bigmap/logo_bigmap.png" alt="BIG-MAP" style="height: 48px" /></div>
 
-**FINALES**, Fast INtention Agnostic LEarning Server
+**FINALES**, Fast INtention Agnostic LEarning Server (BIG-MAP)
 
-- A central server mediating the exchange, from BIG-MAP
-- One tenant per platform, representing its capabilities
-- Capabilities discoverable by any other tenant
+- A central server mediating the exchange
+- One tenant per system: ELN, workflow manager, instrument
+- Each declaring its capabilities, discoverable by the others
 - PREMISE demo: an openBIS AFM experiment, through FINALES, into AiiDAlab
 
 </div>
@@ -298,6 +322,34 @@ Peer to peer needs a connector per pair, so the work grows as N². PREMISE explo
 
 <!--
 Q:
+
+Say:
+- peer to peer: one connector per pair, so N platforms need N squared
+- RO-Crate: files plus a metadata file, already a standard
+- plain RO-Crate needs an agreed profile per domain, and a parser for it
+- Schema Plus embeds the schema, so a crate explains itself
+- one reader per platform, any sender
+- backwards compatible, no change to RO-Crate itself
+- from Scientific IT Services at ETH Zurich, the openBIS developers
+- started end of 2024, with PSI and EMPA
+- AiiDA integration planned, Edan named for it
+
+- FINALES: a broker, from BIG-MAP, built for autonomous labs
+- one tenant per system, declaring what it can do
+- other tenants discover those capabilities and place requests
+- N tenants instead of N squared connectors
+- PREMISE demo, Bainglass and Pizzi: openBIS AFM experiment on benzene,
+  request through FINALES, AiiDA tenant opens an AiiDAlab session
+- consolidates four PREMISE deliverables
+
+Bridge to the next slide:
+- both move the data, neither says what it means
+- whitepaper pair: semantics do not substitute schema, schema does not
+  substitute semantics
+- your voltage and mine still have to be the same quantity
+- what remains is declaring equivalences, owl:equivalentClass and
+  owl:equivalentProperty
+- whitepaper: those are often settled by institutional interest
 -->
 
 ---
@@ -320,7 +372,7 @@ Shared ontology terms give metadata one meaning across platforms, serialised her
 - JSON-LD metadata schemas, for two use cases
   - Simulation data for STM imaging of molecules on surfaces
   - AiiDA managing battery cycling experiments
-- Guidelines for annotating data with ontologies
+- Guidelines: which fields to record, which ontology term each maps to
 - Deployed in every ELN and workflow-manager demonstration
 - openBIS: a generic visualisation plugin framework, attaching views to data types
 
@@ -336,7 +388,25 @@ Shared ontology terms give metadata one meaning across platforms, serialised her
 </div>
 
 <!--
-Q:
+Q: what do the guidelines actually say?
+
+Five steps, from the whitepaper:
+- decide which metadata fields describe the experiment, with units
+- find existing ontology terms for each, reusing rather than inventing
+- attach each term's IRI to the field
+- choose a serialisation, JSON-LD here
+- automate the conversion, Excel to JSON-LD scripts
+
+Scale:
+- 90 metadata items for coin cell battery production
+- 300+ for SPM, since the existing Nexus schema was missing fields
+
+Ontologies used:
+- BattINFO for batteries, from BIG-MAP and Battery 2030
+- SPM had none, so terms came from NCIT, Schema.org, CHMO, OBI, EMMO and others
+- found through the Ontology Lookup Service, EMMO through Protege
+
+Authors: Plainpan, Lopes, Bainglass, Barillari, Battaglia, Pignedoli, Pizzi
 -->
 
 ---
@@ -347,7 +417,7 @@ layout: section
 
 <div class="pt-2 text-sm opacity-65">
 
-`aiida-agents`, and the ELN
+Google Summer of Code 2026, by Jaweria Batool
 
 </div>
 
@@ -359,39 +429,50 @@ Q:
 
 # `aiida-agents`
 
-<div class="grid grid-cols-9 gap-4 pt-2">
+<div class="grid grid-cols-9 gap-6 pt-2">
 <div class="col-span-5 text-xs">
 
 ```text
 src/aiida_agents/
-├─ agents/    analysis · codegen · execution · planner
-├─ mcp/       MCP server, read-only tools
-├─ rag/       chunking, embedding, retrieval, citations
-├─ sandbox/   profile copy, code runner, static guard
-└─ tools/     typed tool functions
+├─ agents/     analysis · codegen · execution · planner
+├─ cli/        commands, REPL, approval prompt
+├─ mcp/        MCP server, read-only tools
+├─ plugins/    AgentPlugin protocol, provider loader
+├─ rag/        chunking, embedding, retrieval, citations
+├─ sandbox/    profile copy, code runner, static guard
+└─ tools/      typed tool functions
 ```
 
 </div>
-<div class="col-span-4 text-sm compact">
+<div class="col-span-4 text-xs">
 
-- GSoC 2026, Jaweria Batool
+```bash
+aiida-agents config init
+aiida-agents config show
+aiida-agents doctor
+aiida-agents rag build
+aiida-agents sandbox init
+
+aiida-agents chat
+aiida-agents ask "why did my workflow XY fail?"
+aiida-agents mcp
+```
+
+</div>
+</div>
+
+<div class="text-sm pt-5 compact">
+
 - Explore, inspect, diagnose, look up the docs, set up, run
 - Typed tool calls against your own provenance graph
-- Writes behind an explicit approval gate
-
-</div>
-</div>
-
-<div class="text-sm pt-4 compact">
-
 - Retrieval over the AiiDA docs, answers carrying citations
-- Generated code runs against a disposable copy of the profile
-- Provider agnostic: Ollama locally, Apertus through an `openai-compatible` base URL
+- Twenty of those tools served over MCP, to any MCP client
 
 </div>
 
 <div class="refs">
-<a href="https://github.com/aiidateam/aiida-agents">github.com/aiidateam/aiida-agents</a>
+<a href="https://github.com/aiidateam/aiida-agents">github.com/aiidateam/aiida-agents</a> &nbsp;·&nbsp;
+<a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a>
 </div>
 
 <!--
@@ -400,44 +481,62 @@ Q:
 
 ---
 
-# MCP
+# Guardrails
 
-<div class="text-sm pt-2">
+<div class="grid grid-cols-3 gap-8 pt-6 text-sm compact">
 
-```bash
-aiida-agents mcp                                  # streamable-http on :8000
-claude mcp add --transport http aiida-agents http://127.0.0.1:8000/mcp
+<div>
+
+**Writes require approval**
+
+<div class="text-xs pt-1 pb-2">
+
+```python
+agent.tool_plain(
+    requires_approval=True
+)(submit_workflow)
 ```
 
 </div>
 
-<div class="text-sm pt-4 compact">
-
-- Twenty read-only tools, the same ones the agents call
-- Processes, data, workflows: status, reports, queries, inputs, codes
-- One tool layer, any MCP client in front of it
-- The plan wraps REST APIs into MCP; the AiiDA side is already built
+- Registered on the tool itself
+- No wording talks it out of it
+- *"skip the confirmation"* still prompts
 
 </div>
 
-<div class="text-sm pt-2 italic opacity-80 text-center">
+<div>
 
-An ELN agent gets AiiDA by adding a server, with no AiiDA-specific code of its own.
+**Code runs against a copy**
+
+- Disposable copy of the profile
+- Submissions still reach the real cluster
+- Containment stops at the database
 
 </div>
 
-<div class="refs">
-<a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a> &nbsp;·&nbsp;
-<i>serve the tools and RAG to MCP clients</i> <a href="https://github.com/aiidateam/aiida-agents/issues/84">github.com/aiidateam/aiida-agents/issues/84</a>
+<div>
+
+**Where the model runs**
+
+- Ollama: nothing leaves the machine
+- Apertus: nothing leaves Switzerland
+- Cloud providers, where acceptable
+
+</div>
+
 </div>
 
 <!--
 Q:
 
-Issue #84 in aiida-agents is exactly this: serve the tools and the RAG index to
-MCP clients. https://github.com/aiidateam/aiida-agents/issues/84
+- compute is not sandboxed: a submission spends the real allocation
+- filesystem and network are open too
+- only the provenance is contained
 -->
 
+---
+hide: true
 ---
 
 # Agents in the ELN
@@ -463,6 +562,8 @@ The tool layer exists. Missing: the ELN as a source, the Knowledge Graph as a ta
 Q:
 -->
 
+---
+hide: true
 ---
 
 # Open questions
