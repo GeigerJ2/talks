@@ -180,7 +180,7 @@ Q:
 
 - PostgreSQL / SQLite: the graph, plus each node's `attributes` and `extras` as JSONB
 - the file repository, `disk-objectstore`:
-  - content-addressed by SHA-256, deduplicated
+  - content-addressed by SHA-256
   - raw files, never queried by content
 - Only file-content hash crossing between both
 
@@ -207,7 +207,7 @@ the container, `$AIIDA_PATH/.aiida/repository/<profile>/container/`
 ```text
 loose/aa/bbcc…   one file per object
 packs/0,1,2      append-only, 4 GiB target
-packs.idx        SQLite: hash → pack, offset
+packs.idx        SQLite: hash → pack, offset, size
 ```
 
 one `loose` file per new object, packed by `verdi storage maintain`
@@ -663,7 +663,7 @@ Q:
 
 ```bash
 pip install aiida-core
-verdi presto
+verdi presto  # creates your AiiDA profile
 ```
 
 </div>
@@ -672,8 +672,8 @@ verdi presto
 
 - PostgreSQL the only database until v2.5, now also SQLite (a file, no server)
 - RabbitMQ the only broker until v2.9, now also ZeroMQ
-- ZeroMQ Broker started and supervised by the daemon (RMQ runs as OS background process)
-- IPC sockets, local only; workers on another host (currently) still need RabbitMQ
+<!-- - ZeroMQ Broker started and supervised by the daemon (RMQ runs as OS background process) -->
+<!-- - IPC sockets, local only; workers on another host (currently) still need RabbitMQ -->
 
 </div>
 
@@ -891,9 +891,9 @@ Q:
 
 <div class="text-sm pt-3">
 
-- Most symbols re-exported upwards: `orm.StructureData`
-- Deep paths still reachable: `aiida.orm.nodes.data.structure`
 - Convention: below the second level private, unenforced
+- Deep paths still reachable: `from aiida.orm.nodes.data.structure import StructureData`
+- Most symbols re-exported upwards: `from aiida.orm import StructureData`
 - v3: small `core` and `user` modules, importing and re-exporting explicitly
 - Everything outside them internal, free to change
 - Per-module migration files, to upgrade plugins automatically
@@ -937,9 +937,9 @@ src/aiida_agents/
 
 **How we develop**
 
-- `AI_POLICY.md`: a responsible human author per PR
 - `AGENTS.md` and 10 Claude Code skills in-repo
 - CodeRabbit reviews on every non-draft PR
+- `AI_POLICY.md`: a responsible human author per PR
 - Large-scale architectural changes within reach through the help of agents
 
 </div>
