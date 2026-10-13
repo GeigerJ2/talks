@@ -1,0 +1,15 @@
+{
+  "name": "v3-callables",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-seriph": "^0.25.0",
+    "vue": "^3.5.29"
+  }
+}
