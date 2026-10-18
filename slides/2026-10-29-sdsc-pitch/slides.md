@@ -15,6 +15,8 @@ transition: fade
 
 AiiDA-Renku · SDSC Infrastructure Pitch
 
+29 October 2026
+
 </div>
 <div class="flex flex-col items-center gap-8" style="flex: 0 0 240px">
   <img src="/logos/aiida/logo_AiiDA.png" alt="AiiDA" style="height: 44px" />
@@ -28,7 +30,7 @@ AiiDA-Renku · SDSC Infrastructure Pitch
 
 # Materials Cloud Archive (MCA) and Renku
 
-<div class="dek">Open access AiiDA archives, one click into a Renku session</div>
+<div class="dek">Published archives open in Renku with one click</div>
 
 <div class="grid grid-cols-2 gap-6 pt-3 items-center" style="height: 270px">
 <div class="flex items-center justify-center" style="height: 100%">
@@ -42,15 +44,14 @@ AiiDA-Renku · SDSC Infrastructure Pitch
 <div class="grid grid-cols-2 gap-6 pt-6 text-sm compact">
 <div>
 
-- MCA: open repository for materials science
-- AiiDA: workflow engine, records provenance
-- an MCA archive holds a study's full provenance
+- MCA publishes the archives
+- AiiDA tracks the provenance inside them
 
 </div>
 <div>
 
-- with one click from MCA to Renku with AiiDA already set up
-- deployed since 2019, upgrade to Renku v2 in 2025
+- one click from MCA to Renku, AiiDA already set up
+- running since 2020, Renku v2 one-click since 2025
 
 
 </div>
@@ -62,17 +63,13 @@ layout: center
 class: text-center
 ---
 
-# Three constraints
-
-<div class="dek" style="margin-top: 0.4rem">and our proposed solutions for each
-
-</div>
+# Three things stopping reuse today
 
 ---
 
-# Download before open
+# Reading requires downloading
 
-<div class="dek">Current: the whole file must be downloaded</div>
+<div class="dek">the whole file must be downloaded</div>
 
 <div class="shotbox">
   <img class="shot" src="/renku-session-download.png" alt="Session downloading the archive before anything can be read" style="height: 100%; width: auto" />
@@ -80,15 +77,15 @@ class: text-center
 
 <div class="solution mt-4">
 
-**Proposed solution** &nbsp;<span class="opacity-60">WP1</span> &nbsp;·&nbsp; read the archive in place, through a Renku data connector or a remote URL
+**Fix** &nbsp;<span class="opacity-60">WP1</span> &nbsp;·&nbsp; read the archive in place, through a Renku data connector or a remote URL
 
 </div>
 
 ---
 
-# Notebook only
+# Sessions have no graphical interface
 
-<div class="dek">Current: no AiiDAlab, which provides a jupyter-based GUI for AiiDA plugins</div>
+<div class="dek">notebook only, no AiiDAlab</div>
 
 <div class="shotbox">
   <img class="shot" src="/aiidalab-qe.png" alt="AiiDAlab Quantum ESPRESSO app" style="height: 100%; width: auto" />
@@ -96,15 +93,15 @@ class: text-center
 
 <div class="solution mt-4">
 
-**Proposed solution** &nbsp;<span class="opacity-60">WP2</span> &nbsp;·&nbsp; run the AiiDAlab image inside a Renku session
+**Fix** &nbsp;<span class="opacity-60">WP2</span> &nbsp;·&nbsp; run the AiiDAlab image inside a Renku session
 
 </div>
 
 ---
 
-# One link, one file
+# Links reach files, not records
 
-<div class="dek">Current: several archives per record, one launch link each</div>
+<div class="dek">several archives per record, one launch link per file</div>
 
 <div class="shotbox">
   <img class="shot" src="/mca-record-files.png" alt="One record publishing five .aiida files, each with its own launch icon" style="height: 100%; width: auto" />
@@ -112,7 +109,7 @@ class: text-center
 
 <div class="solution mt-4">
 
-**Proposed solution** &nbsp;<span class="opacity-60">WP3</span> &nbsp;·&nbsp; interactive archive explorer
+**Fix** &nbsp;<span class="opacity-60">WP3</span> &nbsp;·&nbsp; one session reaches every archive in a record
 
 </div>
 
@@ -120,7 +117,7 @@ class: text-center
 
 # Work packages
 
-<div class="dek">Twelve months of development, maintenance throughout</div>
+<div class="dek">Twelve months of building, maintained throughout</div>
 
 <div class="gantt pt-8">
 
@@ -148,14 +145,14 @@ class: text-center
 
 <div class="gantt-row">
   <span class="lbl"><b>WP4</b> Maintenance, operations</span>
-  <span class="bar wp4" style="grid-column: 2 / 14">ownership split, release awareness, AiiDA v3 compatibility, usage against a baseline</span>
+  <span class="bar wp4" style="grid-column: 2 / 14">ownership split, release awareness, AiiDA v3, usage baseline</span>
 </div>
 
 </div>
 
 <div class="pt-5 text-sm opacity-70">
 
-Second cycle, should the collaboration continue: a writable data connector as a save target.
+Possible second cycle: a writable data connector as a save target.
 
 </div>
 
@@ -164,15 +161,15 @@ Second cycle, should the collaboration continue: a writable data connector as a 
 
 **From SDSC** &nbsp;<span class="opacity-60">up to 0.5 FTE, 1-2 years</span>
 
-- Renku platform knowledge, continuity
+- They know Renku and keep it running
 
 </div>
 <div>
 
 **From us**
 
-- AiiDA, Materials Cloud Archive, its Kubernetes deployment at PSI
-- migration of archives to latest AiiDA version
+- AiiDA, MCA and its Kubernetes deployment at PSI
+- migration of archives to the latest AiiDA version
 
 
 </div>
@@ -189,7 +186,7 @@ Second cycle, should the collaboration continue: a writable data connector as a 
 
 # From a record to a session
 
-<div class="dek">Launch link, startup notebook, queries over the provenance graph</div>
+<div class="dek">From launch link to queried provenance in 60 seconds</div>
 
 <div class="shotbox">
   <video class="shot" src="/media/renku-journey.mp4" autoplay loop muted playsinline style="height: 100%; width: auto" controls></video>

@@ -1,0 +1,189 @@
+.slidev-layout pre {
+  line-height: 1.4;
+}
+
+/* Bullets: slate chevron marker, generous vertical rhythm. If a slide overflows
+   because of the spacing, the slide has too much text on it. */
+.slidev-layout ul {
+  list-style: none;
+  padding-left: 1.25em;
+}
+
+.slidev-layout ul > li {
+  position: relative;
+  margin-bottom: 1.15em;
+  line-height: 1.5;
+}
+
+.slidev-layout ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.slidev-layout ul > li::before {
+  content: '\203A';
+  position: absolute;
+  left: -1.05em;
+  top: 0;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.95em;
+  line-height: inherit;
+}
+
+/* Nested lists sit tighter, with a lighter marker. */
+.slidev-layout ul ul > li {
+  margin-bottom: 0.5em;
+}
+
+.slidev-layout ul ul > li::before {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.slidev-layout ol > li {
+  margin-bottom: 1.15em;
+  line-height: 1.5;
+}
+
+/* Reference footnotes: pinned to the bottom of the slide, out of the flow. */
+.slidev-layout .refs {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 3.5rem;
+  right: 3.5rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  opacity: 0.55;
+}
+
+.slidev-layout .refs a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.slidev-layout .refs.center {
+  text-align: center;
+}
+
+.title-hero h1 {
+  font-size: 2.7rem;
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+
+.slidev-layout .compact ul > li {
+  margin-bottom: 0.5em;
+}
+
+.slidev-layout ul > li > ul {
+  margin-top: 0.7em;
+}
+
+/* Screenshots: a soft drop shadow and a hairline edge, so a figure with a white
+   background keeps its boundary against the slide. Logos stay flat. */
+.slidev-layout .shot {
+  border-radius: 4px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+/* Planned work, paired with the constraint above it: a tinted band so the two rows
+   read as problem and answer rather than as six separate points. */
+.slidev-layout .plan {
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+  padding-top: 0.9rem;
+}
+
+/* Constraint dek: the problem in one line under the slide title, so the screenshot
+   below it can take the width. */
+.slidev-layout .dek {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-top: -0.6rem;
+}
+
+/* Proposed solution: a tinted callout with a Renku-green accent, so the fix reads
+   as the point of the slide and the screenshot above it as the evidence. */
+.slidev-layout .solution {
+  background: rgba(0, 168, 119, 0.08);
+  border-left: 3px solid #00a877;
+  border-radius: 4px;
+  padding: 0.45rem 1rem;
+  font-size: 0.88rem;
+  position: absolute;
+  left: 3.5rem;
+  right: 3.5rem;
+  bottom: 2.6rem;
+}
+
+/* The theme gives a paragraph its own vertical margin, which is what made the
+   callout tall; the box is one line, so the margin goes. */
+.slidev-layout .solution p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.slidev-layout .solution strong {
+  color: #00795a;
+}
+
+/* Timeline strip: the four packages on one row, each a title over its month range,
+   with a rule beneath to separate the plan from what each party brings. */
+.slidev-layout .timeline {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+  padding-bottom: 0.9rem;
+}
+
+.slidev-layout .timeline p {
+  margin: 0.15rem 0;
+}
+
+/* Screenshot box: fixed height and position, so the three constraint slides render
+   their figures at the same size and the callout below them never moves. */
+.slidev-layout .shotbox {
+  position: absolute;
+  left: 3.5rem;
+  right: 3.5rem;
+  top: 8.4rem;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gantt: a label column plus twelve month columns, each package a bar spanning the
+   months it runs. */
+.slidev-layout .gantt-row {
+  display: grid;
+  grid-template-columns: 200px repeat(12, 1fr);
+  align-items: center;
+  column-gap: 2px;
+  margin-bottom: 0.45rem;
+}
+
+.slidev-layout .gantt-row .lbl {
+  font-size: 0.82rem;
+  padding-right: 0.8rem;
+}
+
+.slidev-layout .gantt-row.months .m {
+  font-size: 0.66rem;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.slidev-layout .gantt-row .bar {
+  font-size: 0.72rem;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.28rem 0.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slidev-layout .bar.wp1 { background: #0f766e; }
+.slidev-layout .bar.wp2 { background: #0e7490; }
+.slidev-layout .bar.wp3 { background: #3f6212; }
+.slidev-layout .bar.wp4 { background: #64748b; }
