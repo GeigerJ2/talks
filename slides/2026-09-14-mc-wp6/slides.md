@@ -205,10 +205,66 @@ Q:
   <img src="/logos/premise/logo_premise.png" alt="PREMISE" style="height: 26px" />
 </div>
 
+# Metadata schemas and ontologies
+
+<div class="text-sm pt-1 opacity-70">
+
+Shared ontology terms give metadata one meaning across platforms, serialised here as JSON-LD
+
+</div>
+
+<div class="grid grid-cols-9 gap-8 pt-6">
+<div class="col-span-6 text-sm compact">
+
+- JSON-LD metadata schemas, for two use cases
+  - Simulation data for STM imaging of molecules on surfaces
+  - AiiDA managing battery cycling experiments
+- Guidelines: which fields to record, which ontology term each maps to
+- Deployed in every ELN and workflow-manager demonstration
+
+</div>
+<div class="col-span-3 flex items-center">
+  <img src="/premise-jsonld.png" alt="An annotated PREMISE record" class="max-h-full" style="max-height: 300px" />
+</div>
+</div>
+
+<div class="refs">
+<i>whitepaper: journey to ontologize metadata</i> <a href="https://github.com/ord-premise/interoperability-guidelines/blob/main/journey-to-ontologize-metadata.md">github.com/ord-premise/interoperability-guidelines</a> &nbsp;·&nbsp;
+<i>demo</i> <a href="https://www.youtube.com/watch?v=JKnmcO2ohqY">youtube.com/watch?v=JKnmcO2ohqY</a>
+</div>
+
+<!--
+Q: what do the guidelines actually say?
+
+Five steps, from the whitepaper:
+- decide which metadata fields describe the experiment, with units
+- find existing ontology terms for each, reusing rather than inventing
+- attach each term's IRI to the field
+- choose a serialisation, JSON-LD here
+- automate the conversion, Excel to JSON-LD scripts
+
+Scale:
+- 90 metadata items for coin cell battery production
+- 300+ for SPM, since the existing Nexus schema was missing fields
+
+Ontologies used:
+- BattINFO for batteries, from BIG-MAP and Battery 2030
+- SPM had none, so terms came from NCIT, Schema.org, CHMO, OBI, EMMO and others
+- found through the Ontology Lookup Service, EMMO through Protege
+
+Authors: Plainpan, Lopes, Bainglass, Barillari, Battaglia, Pignedoli, Pizzi
+-->
+
+---
+
+<div class="absolute top-11 right-14">
+  <img src="/logos/premise/logo_premise.png" alt="PREMISE" style="height: 26px" />
+</div>
+
 # Connecting an ELN to a workflow manager
 
-<div class="grid grid-cols-2 gap-10 pt-2 text-sm compact">
-<div>
+<div class="grid grid-cols-12 gap-6 pt-3">
+<div class="col-span-6 text-sm compact">
 
 **Proof of concept**, before PREMISE
 
@@ -224,18 +280,11 @@ Q:
 - The button moves into the ELN, onto the sample itself
 - The sample identity travels with the request
 - AiiDAlab opens with that sample already imported
+- openBIS: a generic visualisation plugin framework, attaching views to data types
 
 </div>
-<div>
-
-**Example round trip**, with openBIS
-
-- Experimental data recorded in the ELN
-- AiiDAlab launched from the ELN, data fetched into it
-- Simulation workflow prepared, submitted
-- Results retrieved and analysed in AiiDAlab
-- Analysed results exported back onto the ELN sample
-
+<div class="col-span-6 flex items-center justify-center">
+  <img src="/eln-showcase.png" alt="openBIS collection, AiiDAlab submission, the STM result back in openBIS" style="max-height: 420px" />
 </div>
 </div>
 
@@ -266,6 +315,14 @@ Caveat:
 
 Also:
 - the sample stays in openBIS; AiiDA holds derived nodes
+
+Panels:
+
+- top left: molecules collection in openBIS
+- bottom left: geometry optimisation submitted from AiiDAlab
+- top right: the openBIS entry carrying the AiiDA UUID, server URL, and the
+  simulated STM image
+- bottom right: STM analysis in AiiDAlab, and the export back
 -->
 
 ---
@@ -278,7 +335,7 @@ Also:
 
 <div class="text-sm pt-1 opacity-70">
 
-Peer to peer needs a connector per pair, so the work grows as N². PREMISE explored two ways out.
+Peer to peer needs a connector per pair, so the work grows as N x M. PREMISE explored two ways out.
 
 </div>
 
@@ -288,14 +345,11 @@ Peer to peer needs a connector per pair, so the work grows as N². PREMISE explo
 
 <div class="h-14 flex items-center"><img src="/logos/openbis/logo_openbis.png" alt="openBIS" style="height: 42px; position: relative; top: -9px" /></div>
 
-**RO-Crate Schema Plus**
+**RO-Crate Schema Plus** (openBIS, ETHZ)
 
 - RO-Crate: data files packaged with a metadata file
 - Schema Plus adds the schema: fields, types, relationships
-- One reader per platform, serving every sender
-- A crate arrives self-describing, needing no agreed profile
-- From the openBIS developers at ETH Zurich
-- AiiDA integration planned
+- One API per platform, serving every sender
 
 </div>
 
@@ -353,63 +407,6 @@ Bridge to the next slide:
 -->
 
 ---
-
-<div class="absolute top-11 right-14">
-  <img src="/logos/premise/logo_premise.png" alt="PREMISE" style="height: 26px" />
-</div>
-
-# Metadata schemas and ontologies
-
-<div class="text-sm pt-1 opacity-70">
-
-Shared ontology terms give metadata one meaning across platforms, serialised here as JSON-LD
-
-</div>
-
-<div class="grid grid-cols-9 gap-8 pt-6">
-<div class="col-span-5 text-sm compact">
-
-- JSON-LD metadata schemas, for two use cases
-  - Simulation data for STM imaging of molecules on surfaces
-  - AiiDA managing battery cycling experiments
-- Guidelines: which fields to record, which ontology term each maps to
-- Deployed in every ELN and workflow-manager demonstration
-- openBIS: a generic visualisation plugin framework, attaching views to data types
-
-</div>
-<div class="col-span-4 flex items-center">
-  <img src="/premise-jsonld.png" alt="An annotated PREMISE record" class="max-h-full" style="max-height: 300px" />
-</div>
-</div>
-
-<div class="refs">
-<i>whitepaper: journey to ontologize metadata</i> <a href="https://github.com/ord-premise/interoperability-guidelines/blob/main/journey-to-ontologize-metadata.md">github.com/ord-premise/interoperability-guidelines</a> &nbsp;·&nbsp;
-<i>demo</i> <a href="https://www.youtube.com/watch?v=JKnmcO2ohqY">youtube.com/watch?v=JKnmcO2ohqY</a>
-</div>
-
-<!--
-Q: what do the guidelines actually say?
-
-Five steps, from the whitepaper:
-- decide which metadata fields describe the experiment, with units
-- find existing ontology terms for each, reusing rather than inventing
-- attach each term's IRI to the field
-- choose a serialisation, JSON-LD here
-- automate the conversion, Excel to JSON-LD scripts
-
-Scale:
-- 90 metadata items for coin cell battery production
-- 300+ for SPM, since the existing Nexus schema was missing fields
-
-Ontologies used:
-- BattINFO for batteries, from BIG-MAP and Battery 2030
-- SPM had none, so terms came from NCIT, Schema.org, CHMO, OBI, EMMO and others
-- found through the Ontology Lookup Service, EMMO through Protege
-
-Authors: Plainpan, Lopes, Bainglass, Barillari, Battaglia, Pignedoli, Pizzi
--->
-
----
 layout: section
 ---
 
@@ -463,10 +460,10 @@ aiida-agents mcp
 
 <div class="text-sm pt-5 compact">
 
-- Explore, inspect, diagnose, look up the docs, set up, run
+- Explore, inspect, diagnose, set up, run, look up the docs
 - Typed tool calls against your own provenance graph
-- Retrieval over the AiiDA docs, answers carrying citations
-- Twenty of those tools served over MCP, to any MCP client
+- RAG: Retrieval over the AiiDA docs, answers carrying citations
+- Twenty of those tools served over MCP, to any MCP client (e.g., Claude Code, Codex)
 
 </div>
 
@@ -510,8 +507,8 @@ agent.tool_plain(
 **Code runs against a copy**
 
 - Disposable copy of the profile
-- Submissions still reach the real cluster
 - Containment stops at the database
+- Submissions still reach the real cluster
 
 </div>
 

@@ -12,11 +12,11 @@
 
 ## ELN integration
 
+## Metadata schemas and ontologies
+
 ## Connecting an ELN to a workflow manager
 
 ## Platform-agnostic interoperability
-
-## Metadata schemas and ontologies
 
 ## Agents
 
